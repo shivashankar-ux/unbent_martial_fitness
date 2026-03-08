@@ -115,3 +115,51 @@ function goTo(page) {
     });
   }, { passive: true });
 })();
+
+// ═══ INSTAGRAM CAROUSEL ═══
+(function() {
+  const track  = document.getElementById('instaTrack');
+  const dotsEl = document.getElementById('instaDots');
+  if (!track) return;
+
+  const cards = track.querySelectorAll('.insta-card');
+  let visibleCount = window.innerWidth <= 600 ? 1 : window.innerWidth <= 900 ? 2 : 3;
+  let current  = 0;
+  const total  = cards.length;
+  const maxIndex = () => total - visibleCount;
+
+  function buildDots() {
+    dotsEl.innerHTML = '';
+    for (let i = 0; i <= maxIndex(); i++) {
+      const dot = document.createElement('button');
+      dot.className = 'insta-dot' + (i === 0 ? ' active' : '');
+      dot.onclick = () => goToSlide(i);
+      dotsEl.appendChild(dot);
+    }
+  }
+
+  function goToSlide(index) {
+    current = Math.max(0, Math.min(index, maxIndex()));
+    const cardWidth = cards[0].offsetWidth + 16;
+    track.style.transform = `translateX(-${current * cardWidth}px)`;
+    dotsEl.querySelectorAll('.insta-dot').forEach((d, i) => {
+      d.classList.toggle('active', i === current);
+    });
+  }
+
+  window.instaSlide = function(dir) { goToSlide(current + dir); };
+
+  buildDots();
+
+  // Auto-play every 4 seconds
+  setInterval(() => {
+    goToSlide(current >= maxIndex() ? 0 : current + 1);
+  }, 4000);
+
+  // Recalculate on resize
+  window.addEventListener('resize', () => {
+    visibleCount = window.innerWidth <= 600 ? 1 : window.innerWidth <= 900 ? 2 : 3;
+    buildDots();
+    goToSlide(0);
+  });
+})();
