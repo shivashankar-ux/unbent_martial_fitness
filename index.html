@@ -3,7 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Unbent Martial Fitness | Mind. Body. Spirit.</title>
+  <title>Unbent Martial Fitness | Martial Arts Academy Uppal Hyderabad | UMF</title>
+
+  <!-- PRIMARY SEO -->
+  <meta name="description" content="Unbent Martial Fitness (UMF) — Premier martial arts academy in Uppal, Hyderabad. MMA, Boxing, Karate, Kick-Boxing, Self Defense & more. Certified India Coach Master Shaik Taher. Admissions open for all ages. Call 9908455835.">
+  <meta name="keywords" content="martial arts hyderabad, MMA uppal, boxing academy hyderabad, karate classes uppal, kickboxing hyderabad, self defense for women hyderabad, UMF academy, unbent martial fitness, shaik taher coach, martial arts prashanth nagar">
+  <meta name="author" content="Unbent Martial Fitness Pvt Ltd">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#e0001b">
+  <link rel="canonical" href="https://unbentmartialfitness.com/">
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://unbentmartialfitness.com/">
+  <meta property="og:title" content="Unbent Martial Fitness | Martial Arts Academy Uppal Hyderabad">
+  <meta property="og:description" content="Train with certified India Coach Master Shaik Taher. MMA, Boxing, Karate, Kick-Boxing, Self Defense & more. All ages welcome at UMF Academy, Uppal.">
+  <meta property="og:image" content="https://unbentmartialfitness.com/og-image.jpg">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:site_name" content="Unbent Martial Fitness">
+
+  <!-- TWITTER CARD -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Unbent Martial Fitness | UMF Academy Hyderabad">
+  <meta name="twitter:description" content="Premier martial arts training in Uppal, Hyderabad. MMA, Boxing, Karate & more. All ages welcome. Call 9908455835.">
+  <meta name="twitter:image" content="https://unbentmartialfitness.com/og-image.jpg">
+
+  <!-- GEO / LOCAL SEO -->
+  <meta name="geo.region" content="IN-TG">
+  <meta name="geo.placename" content="Uppal, Hyderabad, Telangana">
+  <meta name="geo.position" content="17.4056;78.5558">
+  <meta name="ICBM" content="17.4056, 78.5558">
+
+  <!-- LOCAL BUSINESS SCHEMA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsActivityLocation",
+    "name": "Unbent Martial Fitness Pvt Ltd",
+    "alternateName": "UMF Academy",
+    "description": "Premier martial arts academy in Uppal, Hyderabad offering MMA, Boxing, Karate, Kick-Boxing, Gymnastics, Nunchaku, Bo-Staff, Sword Training and Self Defense for all ages.",
+    "url": "https://unbentmartialfitness.com",
+    "telephone": ["+919908455835", "+917382254343"],
+    "priceRange": "₹₹",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Prashanth Nagar, Above SBI Bank",
+      "addressLocality": "Uppal",
+      "addressRegion": "Telangana",
+      "postalCode": "500039",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 17.4056,
+      "longitude": 78.5558
+    },
+    "openingHoursSpecification": [
+      {"@type": "OpeningHoursSpecification","dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens": "06:00","closes": "11:00"},
+      {"@type": "OpeningHoursSpecification","dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens": "17:00","closes": "21:00"}
+    ],
+    "founder": {
+      "@type": "Person",
+      "name": "Shaik Taher",
+      "jobTitle": "Head Coach & Founder"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Martial Arts Programs",
+      "itemListElement": [
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"MMA Training"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Boxing"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Kick-Boxing"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Karate"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Self Defense for Women"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Gymnastics"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"CrossFit Workouts"}}
+      ]
+    }
+  }
+  </script>
+
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -49,6 +128,7 @@
       display: flex; align-items: center; gap: 14px; cursor: pointer;
     }
     .nav-logo svg { width: 50px; height: 50px; }
+    .nav-logo-img { width: 54px; height: 54px; object-fit: contain; }
     .nav-brand { display: flex; flex-direction: column; }
     .nav-brand-main {
       font-family: 'Bebas Neue', sans-serif;
@@ -621,32 +701,118 @@
     .gallery-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 3px;
+      gap: 16px;
     }
+
+    /* 3D flip container */
     .gallery-item {
       aspect-ratio: 4/3;
-      background: var(--dark2);
-      overflow: hidden; position: relative;
-      display: flex; align-items: center; justify-content: center;
+      perspective: 1000px;
+      cursor: pointer;
     }
-    .gallery-item-inner {
+    .gallery-flip {
       width: 100%; height: 100%;
-      display: flex; align-items: center; justify-content: center;
-      flex-direction: column; gap: 12px;
-      transition: transform 0.4s;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+      border-radius: 4px;
     }
-    .gallery-item:hover .gallery-item-inner { transform: scale(1.04); }
-    .gallery-placeholder-icon { font-size: 3rem; opacity: 0.3; }
-    .gallery-placeholder-text {
-      font-family: 'Oswald', sans-serif;
-      font-size: 0.7rem; letter-spacing: 3px; color: rgba(255,255,255,0.3);
+    .gallery-item:hover .gallery-flip {
+      transform: rotateY(180deg);
+    }
+
+    /* FRONT FACE */
+    .gallery-front, .gallery-back {
+      position: absolute; inset: 0;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      border-radius: 4px;
+      display: flex; align-items: center; justify-content: center;
+      flex-direction: column; gap: 14px;
+      overflow: hidden;
+    }
+    .gallery-back {
+      transform: rotateY(180deg);
+    }
+
+    /* Front face colors — vibrant, bright */
+    .gallery-item:nth-child(1) .gallery-front {
+      background: linear-gradient(135deg, #1a0a2e 0%, #e0001b 100%);
+      border: 2px solid rgba(224,0,27,0.6);
+      box-shadow: 0 0 30px rgba(224,0,27,0.3), inset 0 0 60px rgba(224,0,27,0.1);
+    }
+    .gallery-item:nth-child(2) .gallery-front {
+      background: linear-gradient(135deg, #0a1a3e 0%, #2a52a8 100%);
+      border: 2px solid rgba(42,82,168,0.6);
+      box-shadow: 0 0 30px rgba(42,82,168,0.3), inset 0 0 60px rgba(42,82,168,0.1);
+    }
+    .gallery-item:nth-child(3) .gallery-front {
+      background: linear-gradient(135deg, #1a0005 0%, #ff3333 100%);
+      border: 2px solid rgba(255,80,80,0.6);
+      box-shadow: 0 0 30px rgba(255,80,80,0.3), inset 0 0 60px rgba(255,80,80,0.1);
+    }
+    .gallery-item:nth-child(4) .gallery-front {
+      background: linear-gradient(135deg, #0a1a2e 0%, #1a3a7a 100%);
+      border: 2px solid rgba(26,58,122,0.8);
+      box-shadow: 0 0 30px rgba(26,58,122,0.4), inset 0 0 60px rgba(26,58,122,0.15);
+    }
+    .gallery-item:nth-child(5) .gallery-front {
+      background: linear-gradient(135deg, #1a0a00 0%, #cc4400 100%);
+      border: 2px solid rgba(200,80,0,0.6);
+      box-shadow: 0 0 30px rgba(200,80,0,0.3), inset 0 0 60px rgba(200,80,0,0.1);
+    }
+    .gallery-item:nth-child(6) .gallery-front {
+      background: linear-gradient(135deg, #0a001a 0%, #6600cc 100%);
+      border: 2px solid rgba(100,0,200,0.5);
+      box-shadow: 0 0 30px rgba(100,0,200,0.3), inset 0 0 60px rgba(100,0,200,0.1);
+    }
+
+    /* Back face — all same dark red info style */
+    .gallery-front .gallery-icon,
+    .gallery-back .gallery-icon { font-size: 3.5rem; filter: drop-shadow(0 0 12px rgba(255,255,255,0.6)); }
+    .gallery-front .gallery-label {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.2rem; letter-spacing: 3px; color: var(--white);
+      text-shadow: 0 0 20px rgba(255,255,255,0.5);
       text-transform: uppercase;
     }
-    .gallery-item:nth-child(1) { background: linear-gradient(135deg, #1a1520, #0d1020); }
-    .gallery-item:nth-child(2) { background: linear-gradient(135deg, #1a0005, #0d0005); }
-    .gallery-item:nth-child(3) { background: linear-gradient(135deg, #001020, #000d1a); }
-    .gallery-item:nth-child(4) { background: linear-gradient(135deg, #0d1020, #1a0005); }
-    .gallery-item:nth-child(5), .gallery-item:nth-child(6) { background: linear-gradient(135deg, #0a0a0a, #1a1a1a); }
+    .gallery-front .gallery-hint {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.6rem; letter-spacing: 3px; color: rgba(255,255,255,0.5);
+      text-transform: uppercase;
+    }
+
+    .gallery-back {
+      background: linear-gradient(135deg, var(--red-dark) 0%, #1a0005 100%);
+      border: 2px solid var(--red);
+      box-shadow: 0 0 40px rgba(224,0,27,0.4);
+      padding: 24px; text-align: center;
+    }
+    .gallery-back .gallery-icon { font-size: 2.8rem; margin-bottom: 4px; }
+    .gallery-back-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.4rem; letter-spacing: 3px; color: var(--white);
+      margin-bottom: 8px;
+    }
+    .gallery-back-desc {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.78rem; line-height: 1.6; color: rgba(255,255,255,0.8);
+      margin-bottom: 14px;
+    }
+    .gallery-back-tag {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.65rem; letter-spacing: 3px; text-transform: uppercase;
+      color: var(--red); border: 1px solid var(--red);
+      padding: 5px 12px; display: inline-block;
+    }
+
+    /* Glow pulse on front */
+    .gallery-front::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
 
     /* ───── TESTIMONIALS ───── */
     .testimonials-section {
@@ -863,7 +1029,7 @@
       .footer-grid { grid-template-columns: 1fr 1fr; gap: 30px; }
       .hero-badge { display: none; }
       .hero-stats { gap: 24px; }
-      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
       .hero-content { max-width: 100%; padding: 0 5%; }
       .hero-red-bar { width: 55%; opacity: 0.5; }
       .ages-banner { flex-direction: column; gap: 16px; text-align: center; }
@@ -899,7 +1065,7 @@
       .timings-section { padding: 60px 5%; }
       .timings-grid { grid-template-columns: 1fr; }
       .gallery-section { padding: 60px 5%; }
-      .gallery-grid { grid-template-columns: 1fr 1fr; gap: 2px; }
+      .gallery-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
       .testimonials-section { padding: 60px 5%; }
       .testimonials-grid { grid-template-columns: 1fr; }
       .services-grid { grid-template-columns: 1fr; gap: 2px; }
@@ -940,22 +1106,7 @@
 <!-- NAVBAR -->
 <nav>
   <div class="nav-logo" onclick="goTo('home')">
-    <!-- UMF Logo (inline SVG simplified) -->
-    <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="60" cy="60" r="58" fill="#0a0a0a" stroke="#1a3a7a" stroke-width="4"/>
-      <circle cx="60" cy="60" r="50" fill="#0a0a0a" stroke="#e0001b" stroke-width="1.5"/>
-      <!-- Yin-yang simplified -->
-      <path d="M60 15 A45 45 0 0 1 60 105 A22.5 22.5 0 0 1 60 60 A22.5 22.5 0 0 0 60 15Z" fill="#e0001b"/>
-      <path d="M60 15 A45 45 0 0 0 60 105 A22.5 22.5 0 0 0 60 60 A22.5 22.5 0 0 1 60 15Z" fill="#1a3a7a"/>
-      <circle cx="60" cy="37.5" r="8" fill="#1a3a7a"/>
-      <circle cx="60" cy="82.5" r="8" fill="#e0001b"/>
-      <circle cx="60" cy="37.5" r="3" fill="#e0001b"/>
-      <circle cx="60" cy="82.5" r="3" fill="#1a3a7a"/>
-      <!-- Stars -->
-      <text x="60" y="118" text-anchor="middle" font-size="7" fill="#e0001b" font-family="sans-serif">★ UMF ★</text>
-      <!-- Arc text placeholder -->
-      <text x="60" y="9" text-anchor="middle" font-size="5.5" fill="#cccccc" font-family="sans-serif" letter-spacing="2">UNBENT MARTIAL</text>
-    </svg>
+    <img src="umf-logo.svg" alt="Unbent Martial Fitness Logo" class="nav-logo-img">
     <div class="nav-brand">
       <span class="nav-brand-main">UNBENT MF</span>
       <span class="nav-brand-sub">Mind · Body · Spirit</span>
@@ -1126,42 +1277,103 @@
       <div class="section-line"></div>
     </div>
     <div class="gallery-grid">
+
       <div class="gallery-item">
-        <div class="gallery-item-inner">
-          <div class="gallery-placeholder-icon">🥊</div>
-          <div class="gallery-placeholder-text">Training Hall</div>
+        <div class="gallery-flip">
+          <div class="gallery-front">
+            <div class="gallery-icon">🥊</div>
+            <div class="gallery-label">Training Hall</div>
+            <div class="gallery-hint">Hover to explore</div>
+          </div>
+          <div class="gallery-back">
+            <div class="gallery-icon">🥊</div>
+            <div class="gallery-back-title">Training Hall</div>
+            <div class="gallery-back-desc">State-of-the-art training floor with heavy bags, mats, and full sparring equipment for all disciplines.</div>
+            <span class="gallery-back-tag">UMF Academy</span>
+          </div>
         </div>
       </div>
+
       <div class="gallery-item">
-        <div class="gallery-item-inner">
-          <div class="gallery-placeholder-icon">🥋</div>
-          <div class="gallery-placeholder-text">Boxing Ring</div>
+        <div class="gallery-flip">
+          <div class="gallery-front">
+            <div class="gallery-icon">🥊</div>
+            <div class="gallery-label">Boxing Ring</div>
+            <div class="gallery-hint">Hover to explore</div>
+          </div>
+          <div class="gallery-back">
+            <div class="gallery-icon">🥊</div>
+            <div class="gallery-back-title">Boxing Ring</div>
+            <div class="gallery-back-desc">Professional full-size boxing ring for sparring sessions, competitions, and advanced training.</div>
+            <span class="gallery-back-tag">Professional Setup</span>
+          </div>
         </div>
       </div>
+
       <div class="gallery-item">
-        <div class="gallery-item-inner">
-          <div class="gallery-placeholder-icon">🏆</div>
-          <div class="gallery-placeholder-text">Champions</div>
+        <div class="gallery-flip">
+          <div class="gallery-front">
+            <div class="gallery-icon">🏆</div>
+            <div class="gallery-label">Champions</div>
+            <div class="gallery-hint">Hover to explore</div>
+          </div>
+          <div class="gallery-back">
+            <div class="gallery-icon">🏆</div>
+            <div class="gallery-back-title">Champions</div>
+            <div class="gallery-back-desc">UMF students compete and win at local and national levels — building champions on and off the mat.</div>
+            <span class="gallery-back-tag">Winners Circle</span>
+          </div>
         </div>
       </div>
+
       <div class="gallery-item">
-        <div class="gallery-item-inner">
-          <div class="gallery-placeholder-icon">⚔️</div>
-          <div class="gallery-placeholder-text">Kids Batch</div>
+        <div class="gallery-flip">
+          <div class="gallery-front">
+            <div class="gallery-icon">⚔️</div>
+            <div class="gallery-label">Kids Batch</div>
+            <div class="gallery-hint">Hover to explore</div>
+          </div>
+          <div class="gallery-back">
+            <div class="gallery-icon">⚔️</div>
+            <div class="gallery-back-title">Kids Batch</div>
+            <div class="gallery-back-desc">Specially designed training for children — building discipline, focus, and confidence from an early age.</div>
+            <span class="gallery-back-tag">All Ages Welcome</span>
+          </div>
         </div>
       </div>
+
       <div class="gallery-item">
-        <div class="gallery-item-inner">
-          <div class="gallery-placeholder-icon">🎯</div>
-          <div class="gallery-placeholder-text">Group Training</div>
+        <div class="gallery-flip">
+          <div class="gallery-front">
+            <div class="gallery-icon">🎯</div>
+            <div class="gallery-label">Group Training</div>
+            <div class="gallery-hint">Hover to explore</div>
+          </div>
+          <div class="gallery-back">
+            <div class="gallery-icon">🎯</div>
+            <div class="gallery-back-title">Group Training</div>
+            <div class="gallery-back-desc">Energy-packed group sessions that build team spirit, push limits, and accelerate skill development.</div>
+            <span class="gallery-back-tag">Team Spirit</span>
+          </div>
         </div>
       </div>
+
       <div class="gallery-item">
-        <div class="gallery-item-inner">
-          <div class="gallery-placeholder-icon">💪</div>
-          <div class="gallery-placeholder-text">Fitness Zone</div>
+        <div class="gallery-flip">
+          <div class="gallery-front">
+            <div class="gallery-icon">💪</div>
+            <div class="gallery-label">Fitness Zone</div>
+            <div class="gallery-hint">Hover to explore</div>
+          </div>
+          <div class="gallery-back">
+            <div class="gallery-icon">💪</div>
+            <div class="gallery-back-title">Fitness Zone</div>
+            <div class="gallery-back-desc">CrossFit and conditioning area to build the strength, endurance, and power every martial artist needs.</div>
+            <span class="gallery-back-tag">Strength & Power</span>
+          </div>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -1599,24 +1811,59 @@
     }
   });
 
-  function submitForm() {
-    const name = document.getElementById('f-name').value.trim();
-    const phone = document.getElementById('f-phone').value.trim();
+  // ═══════════════════════════════════════════════
+  // SETUP — CALLMEBOT (one time, 2 minutes):
+  //   1. Save this number in your contacts: +34 644 52 74 90
+  //   2. Send this exact message to it on WhatsApp:
+  //        I allow callmebot to send me messages
+  //   3. You'll get an API key back (e.g. 1234567)
+  //   4. Replace YOUR_CALLMEBOT_API_KEY below with that key
+  // ═══════════════════════════════════════════════
+
+  const OWNER_PHONE   = '919908455835';        // owner number (country code, no +)
+  const CALLMEBOT_KEY = 'YOUR_CALLMEBOT_API_KEY'; // ← paste your key here
+
+  async function submitForm() {
+    const name    = document.getElementById('f-name').value.trim();
+    const phone   = document.getElementById('f-phone').value.trim();
     const program = document.getElementById('f-program').value;
+    const age     = document.getElementById('f-age').value.trim();
+    const batch   = document.getElementById('f-batch').value || 'Not specified';
+    const message = document.getElementById('f-message').value.trim() || 'None';
 
     if (!name || !phone || !program) {
       alert('Please fill in your name, phone number, and select a program.');
       return;
     }
 
+    const btn = document.querySelector('.form-submit');
+    btn.textContent = 'SENDING...';
+    btn.disabled = true;
+
+    const timestamp = new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' });
+
+    // 1️⃣ Alert owner via CallMeBot WhatsApp
+    if (CALLMEBOT_KEY !== 'YOUR_CALLMEBOT_API_KEY') {
+      try {
+        const alertMsg = encodeURIComponent(
+          `🥊 NEW UMF ENROLLMENT!\n\n👤 Name: ${name}\n📞 Phone: ${phone}\n🎯 Program: ${program}\n🕐 Batch: ${batch}\n🗓 Age: ${age || 'N/A'}\n💬 Message: ${message}\n\n⏰ ${timestamp}`
+        );
+        await fetch(`https://api.callmebot.com/whatsapp.php?phone=${OWNER_PHONE}&text=${alertMsg}&apikey=${CALLMEBOT_KEY}`);
+      } catch (err) {
+        console.warn('WhatsApp alert failed:', err);
+      }
+    }
+
+    // 2️⃣ Show success screen
     document.getElementById('enrollment-form').style.display = 'none';
     document.getElementById('form-success').style.display = 'block';
 
-    const msg = encodeURIComponent(
-      `Hi! I'd like to enroll at UMF Academy.\n\nName: ${name}\nPhone: ${phone}\nProgram: ${program}\nBatch: ${document.getElementById('f-batch').value || 'Not specified'}`
+    // 3️⃣ Open student's WhatsApp with pre-filled message
+    const waMsg = encodeURIComponent(
+      `Hi! I'd like to enroll at UMF Academy.\n\nName: ${name}\nAge: ${age || 'Not specified'}\nPhone: ${phone}\nProgram: ${program}\nBatch: ${batch}\nMessage: ${message}`
     );
     setTimeout(() => {
-      window.open(`https://wa.me/919908455835?text=${msg}`, '_blank');
+      window.open(`https://wa.me/919908455835?text=${waMsg}`, '_blank');
     }, 800);
   }
 </script>
