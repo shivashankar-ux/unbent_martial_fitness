@@ -168,8 +168,8 @@
     .btn-outline:hover { background: var(--white); color: var(--black); }
 
     .hero-stats {
-      position: absolute; bottom: 50px; left: 6%;
       display: flex; gap: 50px; z-index: 2;
+      margin-top: 48px;
     }
     .stat { text-align: center; }
     .stat-num {
@@ -862,7 +862,7 @@
       .contact-section { grid-template-columns: 1fr; gap: 40px; }
       .footer-grid { grid-template-columns: 1fr 1fr; gap: 30px; }
       .hero-badge { display: none; }
-      .hero-stats { bottom: 20px; gap: 24px; }
+      .hero-stats { gap: 24px; }
       .gallery-grid { grid-template-columns: repeat(2, 1fr); }
       .hero-content { max-width: 100%; padding: 0 5%; }
       .hero-red-bar { width: 55%; opacity: 0.5; }
@@ -889,10 +889,7 @@
       .hero-desc { font-size: 0.9rem; }
       .hero-btns { flex-direction: column; gap: 12px; }
       .btn-primary, .btn-outline { width: 100%; text-align: center; padding: 15px; }
-      .hero-stats {
-        position: static; margin-top: 32px;
-        display: flex; flex-wrap: wrap; gap: 20px; justify-content: flex-start;
-      }
+      .hero-stats { margin-top: 32px; gap: 24px; flex-wrap: wrap; }
       .hero-red-bar { display: none; }
       .hero-badge { display: none; }
 
@@ -1007,12 +1004,12 @@
         <button class="btn-primary" onclick="goTo('contact')">Join Now</button>
         <button class="btn-outline" onclick="goTo('services')">Our Programs</button>
       </div>
-    </div>
 
-    <div class="hero-stats">
-      <div class="stat"><div class="stat-num">10+</div><div class="stat-label">Disciplines</div></div>
-      <div class="stat"><div class="stat-num">All</div><div class="stat-label">Ages Welcome</div></div>
-      <div class="stat"><div class="stat-num">6</div><div class="stat-label">Days a Week</div></div>
+      <div class="hero-stats">
+        <div class="stat"><div class="stat-num">10+</div><div class="stat-label">Disciplines</div></div>
+        <div class="stat"><div class="stat-num">All</div><div class="stat-label">Ages Welcome</div></div>
+        <div class="stat"><div class="stat-num">6</div><div class="stat-label">Days a Week</div></div>
+      </div>
     </div>
 
     <div class="hero-badge">
