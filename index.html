@@ -504,8 +504,19 @@
     .service-card {
       background: var(--dark2); padding: 40px 36px;
       border: 1px solid rgba(255,255,255,0.04);
-      transition: all 0.3s; position: relative; overflow: hidden;
+      transition: transform 0.15s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+      position: relative; overflow: hidden;
       cursor: default;
+      transform-style: preserve-3d;
+      will-change: transform;
+      /* Scroll reveal — hidden initially */
+      opacity: 0;
+      translate: 0 40px;
+    }
+    .service-card.visible {
+      opacity: 1;
+      translate: 0 0;
+      transition: opacity 0.6s ease, translate 0.6s ease, transform 0.15s ease, box-shadow 0.3s ease, border-color 0.3s ease;
     }
     .service-card::after {
       content: '';
@@ -514,15 +525,20 @@
       transition: height 0.3s;
     }
     .service-card:hover::after { height: 100%; }
-    .service-card:hover { border-color: rgba(224,0,27,0.3); transform: translateY(-3px); }
+    .service-card:hover { border-color: rgba(224,0,27,0.3); box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
     .service-icon {
       font-size: 2.5rem; margin-bottom: 20px;
+      display: inline-block;
+      transition: transform 0.15s ease;
+      will-change: transform;
     }
     .service-num {
       font-family: 'Bebas Neue', sans-serif;
       font-size: 3rem; color: rgba(255,255,255,0.04);
       position: absolute; top: 16px; right: 20px;
       line-height: 1;
+      transition: transform 0.15s ease;
+      will-change: transform;
     }
     .service-name {
       font-family: 'Bebas Neue', sans-serif;
@@ -1252,16 +1268,16 @@
         <div class="timing-days">Monday to Saturday</div>
         <div class="timing-note">After school / work · All disciplines</div>
       </div>
-      <a href="https://www.google.com/maps/place/UNBENT+MARTIAL+FITNESS+PVT+LTD/@17.4074385,78.5539285,17z" target="_blank" style="text-decoration:none;">
-  <div class="timing-card" style="cursor:pointer;">
-    <div class="timing-icon">📍</div>
-    <div class="timing-label">Location</div>
-    <div class="timing-time" style="font-size:1.5rem; line-height:1.2;">Prashanth Nagar</div>
-    <div class="timing-days">Uppal, Hyderabad (Above SBI Bank)</div>
-    <div class="timing-note">Tap to open in Google Maps →</div>
-  </div>
-</a>
-</a>
+      <a href="https://maps.google.com/?cid=8459033406631461254" target="_blank" style="text-decoration:none;">
+        <div class="timing-card" style="cursor:pointer;">
+          <div class="timing-icon">📍</div>
+          <div class="timing-label">Location</div>
+          <div class="timing-time" style="font-size:1.5rem; line-height:1.2;">Prashanth Nagar</div>
+          <div class="timing-days">Uppal, Hyderabad (Above SBI Bank)</div>
+          <div class="timing-note">Tap to open in Google Maps →</div>
+        </div>
+      </a>
+    </div>
     <div class="ages-banner">
       <div>
         <div class="ages-text">ADMISSIONS OPEN FOR ALL AGES</div>
@@ -1813,8 +1829,73 @@
     }
   });
 
-  // ═══════════════════════════════════════════════
-  // SETUP — CALLMEBOT (one time, 2 minutes):
+  // ═══ SERVICE CARDS — PARALLAX (tilt + scroll reveal + depth) ═══
+  (function() {
+    // 1️⃣ SCROLL REVEAL — cards fade+rise in one by one
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.classList.add('visible');
+          }, (entry.target.dataset.index || 0) * 80);
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.service-card').forEach((card, i) => {
+      card.dataset.index = i;
+      revealObserver.observe(card);
+    });
+
+    // 2️⃣ MOUSE TILT + DEPTH PARALLAX
+    document.querySelectorAll('.service-card').forEach(card => {
+      const icon = card.querySelector('.service-icon');
+      const num  = card.querySelector('.service-num');
+
+      card.addEventListener('mousemove', e => {
+        const rect   = card.getBoundingClientRect();
+        const cx     = rect.left + rect.width  / 2;
+        const cy     = rect.top  + rect.height / 2;
+        const dx     = (e.clientX - cx) / (rect.width  / 2); // -1 to 1
+        const dy     = (e.clientY - cy) / (rect.height / 2); // -1 to 1
+
+        // Card tilt — subtle 6deg max
+        const tiltX  =  dy * -6;
+        const tiltY  =  dx *  6;
+        card.style.transform = `perspective(900px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) translateZ(0)`;
+
+        // Icon moves opposite (depth illusion) — 8px max
+        if (icon) icon.style.transform = `translate(${dx * -8}px, ${dy * -8}px) scale(1.08)`;
+
+        // Number moves same direction but slower — 5px max
+        if (num)  num.style.transform  = `translate(${dx * 5}px, ${dy * 5}px)`;
+      });
+
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'perspective(900px) rotateX(0) rotateY(0) translateZ(0)';
+        if (icon) icon.style.transform = 'translate(0,0) scale(1)';
+        if (num)  num.style.transform  = 'translate(0,0)';
+      });
+    });
+
+    // 3️⃣ SCROLL PARALLAX — cards subtly shift up as you scroll
+    const parallaxCards = document.querySelectorAll('.service-card');
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      parallaxCards.forEach((card, i) => {
+        const rect   = card.getBoundingClientRect();
+        const inView = rect.top < window.innerHeight && rect.bottom > 0;
+        if (inView && !card.matches(':hover')) {
+          const speed  = (i % 2 === 0) ? 0.025 : 0.018; // alternate rows different speed
+          const offset = (rect.top - window.innerHeight / 2) * speed;
+          card.style.transform = `perspective(900px) translateY(${offset}px)`;
+        }
+      });
+    }, { passive: true });
+  })();
+
+
   //   1. Save this number in your contacts: +34 644 52 74 90
   //   2. Send this exact message to it on WhatsApp:
   //        I allow callmebot to send me messages

@@ -54,3 +54,64 @@ function goTo(page) {
       window.open(`https://wa.me/919908455835?text=${msg}`, '_blank');
     }, 800);
   }
+  // SERVICE CARDS — PARALLAX (tilt + scroll reveal + depth)
+(function() {
+  // 1️⃣ SCROLL REVEAL
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.add('visible');
+        }, (entry.target.dataset.index || 0) * 80);
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.service-card').forEach((card, i) => {
+    card.dataset.index = i;
+    revealObserver.observe(card);
+  });
+
+  // 2️⃣ MOUSE TILT + DEPTH PARALLAX
+  document.querySelectorAll('.service-card').forEach(card => {
+    const icon = card.querySelector('.service-icon');
+    const num  = card.querySelector('.service-num');
+
+    card.addEventListener('mousemove', e => {
+      const rect  = card.getBoundingClientRect();
+      const cx    = rect.left + rect.width  / 2;
+      const cy    = rect.top  + rect.height / 2;
+      const dx    = (e.clientX - cx) / (rect.width  / 2);
+      const dy    = (e.clientY - cy) / (rect.height / 2);
+
+      const tiltX = dy * -6;
+      const tiltY = dx *  6;
+      card.style.transform = `perspective(900px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) translateZ(0)`;
+
+      if (icon) icon.style.transform = `translate(${dx * -8}px, ${dy * -8}px) scale(1.08)`;
+      if (num)  num.style.transform  = `translate(${dx * 5}px, ${dy * 5}px)`;
+    });
+
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'perspective(900px) rotateX(0) rotateY(0) translateZ(0)';
+      if (icon) icon.style.transform = 'translate(0,0) scale(1)';
+      if (num)  num.style.transform  = 'translate(0,0)';
+    });
+  });
+
+  // 3️⃣ SCROLL PARALLAX
+  const parallaxCards = document.querySelectorAll('.service-card');
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    parallaxCards.forEach((card, i) => {
+      const rect   = card.getBoundingClientRect();
+      const inView = rect.top < window.innerHeight && rect.bottom > 0;
+      if (inView && !card.matches(':hover')) {
+        const speed  = (i % 2 === 0) ? 0.025 : 0.018;
+        const offset = (rect.top - window.innerHeight / 2) * speed;
+        card.style.transform = `perspective(900px) translateY(${offset}px)`;
+      }
+    });
+  }, { passive: true });
+})();
