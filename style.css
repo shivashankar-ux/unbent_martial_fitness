@@ -160,9 +160,9 @@
     .btn-outline:hover { background: var(--white); color: var(--black); }
 
     .hero-stats {
-      position: absolute; bottom: 50px; left: 6%;
-      display: flex; gap: 50px; z-index: 2;
-    }
+  display: flex; gap: 50px; z-index: 2;
+  margin-top: 48px;
+}
     .stat { text-align: center; }
     .stat-num {
       font-family: 'Bebas Neue', sans-serif;
