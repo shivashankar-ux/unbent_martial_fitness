@@ -2285,8 +2285,8 @@
   //   4. Replace YOUR_CALLMEBOT_API_KEY below with that key
   // ═══════════════════════════════════════════════
 
-  const OWNER_PHONE   = '919908455835';        // owner number (country code, no +)
-  const CALLMEBOT_KEY = 'YOUR_CALLMEBOT_API_KEY'; // ← paste your key here
+  const TELEGRAM_BOT_TOKEN = '8710183246:AAGI-v2dsYLILbBHR8kGe5FoKeZQDEJOFQs';
+  const TELEGRAM_CHAT_ID   = '1340316382';
 
   async function submitForm() {
     const name    = document.getElementById('f-name').value.trim();
@@ -2307,16 +2307,20 @@
 
     const timestamp = new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' });
 
-    // 1️⃣ Alert owner via CallMeBot WhatsApp
-    if (CALLMEBOT_KEY !== 'YOUR_CALLMEBOT_API_KEY') {
-      try {
-        const alertMsg = encodeURIComponent(
-          `🥊 NEW UMF ENROLLMENT!\n\n👤 Name: ${name}\n📞 Phone: ${phone}\n🎯 Program: ${program}\n🕐 Batch: ${batch}\n🗓 Age: ${age || 'N/A'}\n💬 Message: ${message}\n\n⏰ ${timestamp}`
-        );
-        await fetch(`https://api.callmebot.com/whatsapp.php?phone=${OWNER_PHONE}&text=${alertMsg}&apikey=${CALLMEBOT_KEY}`);
-      } catch (err) {
-        console.warn('WhatsApp alert failed:', err);
-      }
+    // 1️⃣ Send Telegram notification to owner
+    try {
+      const teleMsg = `🥊 *NEW UMF ENROLLMENT!*\n\n👤 *Name:* ${name}\n📞 *Phone:* ${phone}\n🎯 *Program:* ${program}\n🕐 *Batch:* ${batch}\n🗓 *Age:* ${age || 'N/A'}\n💬 *Message:* ${message}\n\n⏰ ${timestamp}`;
+      await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          chat_id: TELEGRAM_CHAT_ID,
+          text: teleMsg,
+          parse_mode: 'Markdown'
+        })
+      });
+    } catch (err) {
+      console.warn('Telegram alert failed:', err);
     }
 
     // 2️⃣ Show success screen
