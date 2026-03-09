@@ -1167,3 +1167,2728 @@
   .stack-card:nth-child(3) { top: 105px; }
   .stack-card:nth-child(4) { top: 120px; }
 }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unbent Martial Fitness | Martial Arts Academy Uppal Hyderabad | UMF</title>
+
+  <!-- PRIMARY SEO -->
+  <meta name="description" content="Unbent Martial Fitness (UMF) — Premier martial arts academy in Uppal, Hyderabad. MMA, Boxing, Karate, Kick-Boxing, Self Defense & more. Certified India Coach Master Shaik Taher. Admissions open for all ages. Call 9908455835.">
+  <meta name="keywords" content="martial arts hyderabad, MMA uppal, boxing academy hyderabad, karate classes uppal, kickboxing hyderabad, self defense for women hyderabad, UMF academy, unbent martial fitness, shaik taher coach, martial arts prashanth nagar">
+  <meta name="author" content="Unbent Martial Fitness Pvt Ltd">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#e0001b">
+  <link rel="canonical" href="https://unbentmartialfitness.com/">
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://unbentmartialfitness.com/">
+  <meta property="og:title" content="Unbent Martial Fitness | Martial Arts Academy Uppal Hyderabad">
+  <meta property="og:description" content="Train with certified India Coach Master Shaik Taher. MMA, Boxing, Karate, Kick-Boxing, Self Defense & more. All ages welcome at UMF Academy, Uppal.">
+  <meta property="og:image" content="https://unbentmartialfitness.com/og-image.jpg">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:site_name" content="Unbent Martial Fitness">
+
+  <!-- TWITTER CARD -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Unbent Martial Fitness | UMF Academy Hyderabad">
+  <meta name="twitter:description" content="Premier martial arts training in Uppal, Hyderabad. MMA, Boxing, Karate & more. All ages welcome. Call 9908455835.">
+  <meta name="twitter:image" content="https://unbentmartialfitness.com/og-image.jpg">
+
+  <!-- GEO / LOCAL SEO -->
+  <meta name="geo.region" content="IN-TG">
+  <meta name="geo.placename" content="Uppal, Hyderabad, Telangana">
+  <meta name="geo.position" content="17.4056;78.5558">
+  <meta name="ICBM" content="17.4056, 78.5558">
+
+  <!-- LOCAL BUSINESS SCHEMA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsActivityLocation",
+    "name": "Unbent Martial Fitness Pvt Ltd",
+    "alternateName": "UMF Academy",
+    "description": "Premier martial arts academy in Uppal, Hyderabad offering MMA, Boxing, Karate, Kick-Boxing, Gymnastics, Nunchaku, Bo-Staff, Sword Training and Self Defense for all ages.",
+    "url": "https://unbentmartialfitness.com",
+    "telephone": ["+919908455835", "+917382254343"],
+    "priceRange": "₹₹",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Prashanth Nagar, Above SBI Bank",
+      "addressLocality": "Uppal",
+      "addressRegion": "Telangana",
+      "postalCode": "500039",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 17.4056,
+      "longitude": 78.5558
+    },
+    "openingHoursSpecification": [
+      {"@type": "OpeningHoursSpecification","dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens": "06:00","closes": "11:00"},
+      {"@type": "OpeningHoursSpecification","dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens": "17:00","closes": "21:00"}
+    ],
+    "founder": {
+      "@type": "Person",
+      "name": "Shaik Taher",
+      "jobTitle": "Head Coach & Founder"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Martial Arts Programs",
+      "itemListElement": [
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"MMA Training"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Boxing"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Kick-Boxing"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Karate"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Self Defense for Women"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Gymnastics"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"CrossFit Workouts"}}
+      ]
+    }
+  }
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --red: #e0001b;
+      --red-dark: #a80014;
+      --blue: #1a3a7a;
+      --blue-light: #2a52a8;
+      --black: #0a0a0a;
+      --dark: #111111;
+      --dark2: #1a1a1a;
+      --white: #ffffff;
+      --gray: #888888;
+      --light-gray: #cccccc;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--black);
+      color: var(--white);
+      overflow-x: hidden;
+    }
+
+    /* ───── PAGES ───── */
+    .page { display: none; }
+    .page.active { display: block; }
+
+    /* ───── NAVBAR ───── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      background: rgba(10,10,10,0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 2px solid var(--red);
+      padding: 0 5%;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 70px;
+    }
+
+    .nav-logo {
+      display: flex; align-items: center; gap: 14px; cursor: pointer;
+    }
+    .nav-logo svg { width: 50px; height: 50px; }
+    .nav-logo-img { width: 54px; height: 54px; object-fit: contain; }
+    .nav-brand { display: flex; flex-direction: column; }
+    .nav-brand-main {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.3rem; letter-spacing: 3px; color: var(--white);
+      line-height: 1;
+    }
+    .nav-brand-sub {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.6rem; letter-spacing: 4px; color: var(--red);
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex; gap: 8px; list-style: none;
+    }
+    .nav-links li a {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.85rem; letter-spacing: 2px; text-transform: uppercase;
+      color: var(--light-gray); text-decoration: none;
+      padding: 8px 16px; border-radius: 2px;
+      transition: all 0.2s;
+    }
+    .nav-links li a:hover, .nav-links li a.active {
+      color: var(--white); background: var(--red);
+    }
+
+    .nav-cta {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.85rem; letter-spacing: 2px; text-transform: uppercase;
+      background: var(--red); color: var(--white);
+      border: none; cursor: pointer; padding: 10px 22px;
+      font-weight: 600; transition: all 0.2s; border-radius: 2px;
+    }
+    .nav-cta:hover { background: var(--red-dark); transform: translateY(-1px); }
+    /* ───── HERO ───── */
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0a0a0a 0%, #1a0005 40%, #0a0a1a 100%);
+      position: relative; overflow: hidden;
+      display: flex; align-items: center;
+      padding-top: 70px;
+    }
+
+    .hero-bg-pattern {
+      position: absolute; inset: 0; opacity: 0.04;
+      background-image: repeating-linear-gradient(
+        45deg, var(--red) 0, var(--red) 1px, transparent 0, transparent 50%
+      );
+      background-size: 30px 30px;
+    }
+
+    .hero-red-bar {
+      position: absolute; top: 0; right: 0;
+      width: 45%; height: 100%;
+      background: linear-gradient(160deg, var(--red) 0%, var(--red-dark) 60%, transparent 100%);
+      clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+      opacity: 0.85;
+    }
+
+
+
+    .hero-content {
+      position: relative; z-index: 2;
+      padding: 0 6% 0 6%;
+      max-width: 650px;
+    }
+
+    .hero-tag {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.75rem; letter-spacing: 5px; text-transform: uppercase;
+      color: var(--red); border: 1px solid var(--red);
+      display: inline-block; padding: 6px 14px; margin-bottom: 24px;
+    }
+
+    .hero-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(3.5rem, 8vw, 7rem);
+      line-height: 0.92; letter-spacing: 2px;
+      color: var(--white); margin-bottom: 8px;
+    }
+    .hero-title span { color: var(--red); }
+
+    .hero-tagline {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(1rem, 2.5vw, 1.4rem);
+      letter-spacing: 6px; color: var(--blue-light);
+      text-transform: uppercase; margin-bottom: 28px;
+    }
+
+    .hero-desc {
+      font-size: 1rem; line-height: 1.7; color: var(--light-gray);
+      max-width: 460px; margin-bottom: 40px;
+    }
+
+    .hero-btns {
+      display: flex; gap: 16px; flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.9rem; letter-spacing: 3px; text-transform: uppercase;
+      background: var(--red); color: var(--white);
+      border: none; cursor: pointer; padding: 16px 36px;
+      font-weight: 600; transition: all 0.25s;
+      text-decoration: none; display: inline-block;
+    }
+    .btn-primary:hover { background: var(--red-dark); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(224,0,27,0.4); }
+
+    .btn-outline {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.9rem; letter-spacing: 3px; text-transform: uppercase;
+      background: transparent; color: var(--white);
+      border: 2px solid var(--white); cursor: pointer; padding: 14px 34px;
+      font-weight: 500; transition: all 0.25s;
+      text-decoration: none; display: inline-block;
+    }
+    .btn-outline:hover { background: var(--white); color: var(--black); }
+
+    .hero-stats {
+      display: flex; gap: 50px; z-index: 2;
+      margin-top: 48px;
+    }
+    .stat { text-align: center; }
+    .stat-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2.8rem; color: var(--red); line-height: 1;
+    }
+    .stat-label {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.65rem; letter-spacing: 3px; color: var(--gray);
+      text-transform: uppercase;
+    }
+
+    .hero-badge {
+      position: absolute; right: 8%; top: 50%;
+      transform: translateY(-50%);
+      z-index: 3; text-align: center;
+    }
+    .badge-circle {
+      width: 190px; height: 190px;
+      border-radius: 50%;
+      background: rgba(0,0,0,0.75);
+      border: 3px solid var(--blue);
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      padding: 20px;
+    }
+    .badge-master {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.65rem; letter-spacing: 3px; color: var(--gray); margin-bottom: 6px;
+    }
+    .badge-name {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.7rem; color: var(--white); line-height: 1; margin-bottom: 4px;
+    }
+    .badge-name span { color: var(--red); }
+    .badge-title {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.7rem; color: var(--light-gray); letter-spacing: 1px;
+    }
+
+    /* ───── SECTION HEADER ───── */
+    .section-header { text-align: center; margin-bottom: 60px; }
+    .section-tag {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.7rem; letter-spacing: 5px; text-transform: uppercase;
+      color: var(--red); margin-bottom: 12px; display: block;
+    }
+    .section-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      letter-spacing: 3px; color: var(--white);
+    }
+    .section-title span { color: var(--red); }
+    .section-line {
+      width: 60px; height: 3px;
+      background: linear-gradient(90deg, var(--red), var(--blue-light));
+      margin: 16px auto 0;
+    }
+
+    /* ───── ABOUT / TRAINER ───── */
+    .trainer-section {
+      padding: 100px 6%;
+      background: var(--dark);
+    }
+    .trainer-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center;
+    }
+    .trainer-visual {
+      position: relative;
+    }
+    .trainer-card {
+      background: linear-gradient(135deg, var(--blue) 0%, var(--blue-light) 100%);
+      border-radius: 4px; padding: 50px 40px;
+      text-align: center; position: relative; overflow: hidden;
+    }
+    .trainer-card::before {
+      content: '';
+      position: absolute; top: -30px; right: -30px;
+      width: 120px; height: 120px;
+      border-radius: 50%; background: rgba(255,255,255,0.05);
+    }
+    .trainer-card::after {
+      content: '';
+      position: absolute; bottom: -20px; left: -20px;
+      width: 80px; height: 80px;
+      border-radius: 50%; background: rgba(255,255,255,0.04);
+    }
+    .trainer-avatar {
+      width: 100px; height: 100px; border-radius: 50%;
+      background: rgba(255,255,255,0.15);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 20px;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2.5rem; color: var(--white);
+      border: 3px solid rgba(255,255,255,0.3);
+    }
+    .trainer-card-name {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2rem; color: var(--white); letter-spacing: 2px; margin-bottom: 6px;
+    }
+    .trainer-card-role {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.75rem; letter-spacing: 4px; color: rgba(255,255,255,0.7);
+      text-transform: uppercase;
+    }
+    .trainer-cert-bar {
+      margin-top: 30px; padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.2);
+      display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;
+    }
+    .cert-badge {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.65rem; letter-spacing: 2px; text-transform: uppercase;
+      background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
+      padding: 6px 12px; color: var(--white); border-radius: 2px;
+    }
+    .trainer-content {}
+    .trainer-intro {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.75rem; letter-spacing: 5px; color: var(--red);
+      text-transform: uppercase; margin-bottom: 16px;
+    }
+    .trainer-name-big {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      letter-spacing: 2px; color: var(--white); line-height: 0.95;
+      margin-bottom: 24px;
+    }
+    .trainer-name-big span { color: var(--red); }
+    .trainer-bio {
+      font-size: 0.97rem; line-height: 1.8; color: var(--light-gray);
+      margin-bottom: 32px;
+    }
+    .trainer-highlights {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 36px;
+    }
+    .highlight {
+      background: var(--dark2);
+      border-left: 3px solid var(--red);
+      padding: 14px 18px;
+    }
+    .highlight-val {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.8rem; color: var(--red); line-height: 1;
+    }
+    .highlight-key {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.65rem; letter-spacing: 3px; color: var(--gray); text-transform: uppercase;
+    }
+
+    /* ───── TIMINGS ───── */
+    .timings-section {
+      padding: 100px 6%;
+      background: linear-gradient(180deg, var(--black) 0%, var(--dark) 100%);
+    }
+    .timings-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .timing-card {
+      background: var(--dark2);
+      border: 1px solid rgba(255,255,255,0.07);
+      padding: 36px 32px;
+      position: relative; overflow: hidden;
+      transition: all 0.3s;
+    }
+    .timing-card:hover { border-color: var(--red); transform: translateY(-4px); }
+    .timing-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--red), var(--blue-light));
+    }
+    .timing-icon {
+      font-size: 2rem; margin-bottom: 16px;
+    }
+    .timing-label {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.7rem; letter-spacing: 4px; color: var(--red); text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .timing-time {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2.5rem; color: var(--white); letter-spacing: 2px; line-height: 1;
+      margin-bottom: 8px;
+    }
+    .timing-days {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem; color: var(--gray);
+    }
+    .timing-note {
+      margin-top: 12px;
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.7rem; letter-spacing: 2px; color: var(--blue-light);
+      text-transform: uppercase;
+    }
+
+    .ages-banner {
+      margin-top: 40px;
+      background: linear-gradient(90deg, var(--red), var(--red-dark));
+      padding: 28px 40px;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 20px;
+    }
+    .ages-text {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2rem; letter-spacing: 3px; color: var(--white);
+    }
+    .ages-sub {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem; color: rgba(255,255,255,0.8);
+    }
+
+    /* ─── PAGE: SERVICES ─── */
+    .services-hero {
+      min-height: 40vh;
+      background: linear-gradient(135deg, var(--red-dark) 0%, var(--black) 60%);
+      display: flex; align-items: flex-end; padding: 100px 6% 60px;
+      position: relative; overflow: hidden;
+    }
+    .services-hero::before {
+      content: '';
+      position: absolute; inset: 0; opacity: 0.05;
+      background-image: repeating-linear-gradient(
+        -45deg, var(--white) 0, var(--white) 1px, transparent 0, transparent 50%
+      );
+      background-size: 20px 20px;
+    }
+    .services-hero-title {
+      position: relative; z-index: 2;
+    }
+    .services-hero-title h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(3rem, 8vw, 6rem); letter-spacing: 3px; color: var(--white);
+      line-height: 0.9;
+    }
+    .services-hero-title h1 span { color: var(--red); }
+    .services-hero-title p {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.8rem; letter-spacing: 5px; color: var(--light-gray);
+      text-transform: uppercase; margin-top: 14px;
+    }
+
+    .services-grid-section {
+      padding: 90px 6%;
+      background: var(--dark);
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2px;
+    }
+    .service-card {
+      background: var(--dark2); padding: 40px 36px;
+      border: 1px solid rgba(255,255,255,0.04);
+      transition: transform 0.15s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+      position: relative; overflow: hidden;
+      cursor: default;
+      transform-style: preserve-3d;
+      will-change: transform;
+      /* Scroll reveal — hidden initially */
+      opacity: 0;
+      translate: 0 40px;
+    }
+    .service-card.visible {
+      opacity: 1;
+      translate: 0 0;
+      transition: opacity 0.6s ease, translate 0.6s ease, transform 0.15s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+    .service-card::after {
+      content: '';
+      position: absolute; bottom: 0; left: 0; right: 0; height: 0;
+      background: linear-gradient(180deg, transparent, rgba(224,0,27,0.08));
+      transition: height 0.3s;
+    }
+    .service-card:hover::after { height: 100%; }
+    .service-card:hover { border-color: rgba(224,0,27,0.3); box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
+    .service-icon {
+      font-size: 2.5rem; margin-bottom: 20px;
+      display: inline-block;
+      transition: transform 0.15s ease;
+      will-change: transform;
+    }
+    .service-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 3rem; color: rgba(255,255,255,0.04);
+      position: absolute; top: 16px; right: 20px;
+      line-height: 1;
+      transition: transform 0.15s ease;
+      will-change: transform;
+    }
+    .service-name {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.6rem; letter-spacing: 2px; color: var(--white);
+      margin-bottom: 10px;
+    }
+    .service-desc {
+      font-size: 0.88rem; line-height: 1.7; color: var(--gray);
+    }
+    .service-tag {
+      display: inline-block; margin-top: 16px;
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.65rem; letter-spacing: 3px;
+      color: var(--red); text-transform: uppercase;
+      border-bottom: 1px solid var(--red); padding-bottom: 2px;
+    }
+
+    .why-section {
+      padding: 90px 6%;
+      background: var(--black);
+    }
+    .why-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+    }
+    .why-item { text-align: center; }
+    .why-icon-wrap {
+      width: 70px; height: 70px; margin: 0 auto 20px;
+      border: 2px solid var(--red); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.8rem;
+    }
+    .why-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1rem; letter-spacing: 2px; color: var(--white);
+      text-transform: uppercase; margin-bottom: 10px;
+    }
+    .why-desc {
+      font-size: 0.85rem; line-height: 1.7; color: var(--gray);
+    }
+
+    /* ─── PAGE: CONTACT ─── */
+    .contact-hero {
+      min-height: 35vh;
+      background: linear-gradient(135deg, #0a0a1a 0%, var(--blue) 100%);
+      display: flex; align-items: flex-end; padding: 100px 6% 60px;
+    }
+    .contact-hero h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(3rem, 8vw, 6rem); letter-spacing: 3px; color: var(--white);
+    }
+    .contact-hero h1 span { color: var(--red); }
+    .contact-hero p {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.8rem; letter-spacing: 5px; color: rgba(255,255,255,0.6);
+      text-transform: uppercase; margin-top: 14px;
+    }
+
+    .contact-section {
+      padding: 90px 6%;
+      background: var(--dark);
+      display: grid; grid-template-columns: 1fr 1fr; gap: 70px;
+    }
+    .contact-info {}
+    .contact-info-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2rem; letter-spacing: 2px; color: var(--white); margin-bottom: 8px;
+    }
+    .contact-info-sub {
+      font-size: 0.9rem; color: var(--gray); margin-bottom: 40px; line-height: 1.7;
+    }
+
+    .contact-item {
+      display: flex; align-items: flex-start; gap: 18px; margin-bottom: 30px;
+    }
+    .contact-icon {
+      width: 48px; height: 48px; flex-shrink: 0;
+      background: rgba(224,0,27,0.1); border: 1px solid rgba(224,0,27,0.3);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem; border-radius: 2px;
+    }
+    .contact-detail {}
+    .contact-detail-label {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.65rem; letter-spacing: 4px; color: var(--red);
+      text-transform: uppercase; margin-bottom: 4px;
+    }
+    .contact-detail-val {
+      font-size: 1rem; color: var(--white); font-weight: 500;
+    }
+    .contact-detail-val a { color: var(--white); text-decoration: none; }
+    .contact-detail-val a:hover { color: var(--red); }
+
+    .social-row {
+      display: flex; gap: 12px; margin-top: 36px;
+    }
+    .social-btn {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase;
+      padding: 12px 20px;
+      border: 1px solid rgba(255,255,255,0.15);
+      color: var(--white); text-decoration: none;
+      transition: all 0.2s; display: flex; align-items: center; gap: 8px;
+    }
+    .social-btn:hover { background: var(--red); border-color: var(--red); }
+
+    .contact-form {}
+    .form-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2rem; letter-spacing: 2px; color: var(--white); margin-bottom: 30px;
+    }
+
+    .form-group { margin-bottom: 20px; }
+    .form-label {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.7rem; letter-spacing: 3px; color: var(--red);
+      text-transform: uppercase; margin-bottom: 8px; display: block;
+    }
+    .form-input, .form-select, .form-textarea {
+      width: 100%;
+      background: var(--dark2);
+      border: 1px solid rgba(255,255,255,0.1);
+      color: var(--white);
+      font-family: 'Inter', sans-serif; font-size: 0.9rem;
+      padding: 14px 18px;
+      outline: none; transition: border-color 0.2s;
+      border-radius: 0;
+      -webkit-appearance: none;
+    }
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      border-color: var(--red);
+    }
+    .form-select option { background: var(--dark2); }
+    .form-textarea { resize: vertical; min-height: 120px; }
+
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+    .form-submit {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.9rem; letter-spacing: 3px; text-transform: uppercase;
+      background: var(--red); color: var(--white);
+      border: none; cursor: pointer; padding: 18px 40px;
+      font-weight: 600; width: 100%; margin-top: 8px;
+      transition: all 0.25s;
+    }
+    .form-submit:hover { background: var(--red-dark); }
+
+    .form-success {
+      display: none; text-align: center; padding: 40px 20px;
+    }
+    .form-success-icon { font-size: 3rem; margin-bottom: 16px; }
+    .form-success-msg {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.8rem; letter-spacing: 2px; color: var(--white); margin-bottom: 8px;
+    }
+    .form-success-sub { color: var(--gray); font-size: 0.9rem; }
+
+    /* Map */
+    .map-section {
+      padding: 0 6% 90px;
+      background: var(--dark);
+    }
+    .map-wrapper {
+      border: 2px solid rgba(255,255,255,0.07);
+      overflow: hidden;
+    }
+    .map-wrapper iframe {
+      display: block; width: 100%; height: 400px; border: none;
+    }
+
+    /* ───── GALLERY ───── */
+    .gallery-section {
+      padding: 90px 6%;
+      background: var(--black);
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    /* 3D flip container */
+    .gallery-item {
+      aspect-ratio: 4/3;
+      perspective: 1000px;
+      cursor: pointer;
+    }
+    .gallery-flip {
+      width: 100%; height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+      border-radius: 4px;
+    }
+    .gallery-item:hover .gallery-flip {
+      transform: rotateY(180deg);
+    }
+
+    /* FRONT FACE */
+    .gallery-front, .gallery-back {
+      position: absolute; inset: 0;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      border-radius: 4px;
+      display: flex; align-items: center; justify-content: center;
+      flex-direction: column; gap: 14px;
+      overflow: hidden;
+    }
+    .gallery-back {
+      transform: rotateY(180deg);
+    }
+
+    /* Front face colors — vibrant, bright */
+    .gallery-item:nth-child(1) .gallery-front {
+      background: linear-gradient(135deg, #1a0a2e 0%, #e0001b 100%);
+      border: 2px solid rgba(224,0,27,0.6);
+      box-shadow: 0 0 30px rgba(224,0,27,0.3), inset 0 0 60px rgba(224,0,27,0.1);
+    }
+    .gallery-item:nth-child(2) .gallery-front {
+      background: linear-gradient(135deg, #0a1a3e 0%, #2a52a8 100%);
+      border: 2px solid rgba(42,82,168,0.6);
+      box-shadow: 0 0 30px rgba(42,82,168,0.3), inset 0 0 60px rgba(42,82,168,0.1);
+    }
+    .gallery-item:nth-child(3) .gallery-front {
+      background: linear-gradient(135deg, #1a0005 0%, #ff3333 100%);
+      border: 2px solid rgba(255,80,80,0.6);
+      box-shadow: 0 0 30px rgba(255,80,80,0.3), inset 0 0 60px rgba(255,80,80,0.1);
+    }
+    .gallery-item:nth-child(4) .gallery-front {
+      background: linear-gradient(135deg, #0a1a2e 0%, #1a3a7a 100%);
+      border: 2px solid rgba(26,58,122,0.8);
+      box-shadow: 0 0 30px rgba(26,58,122,0.4), inset 0 0 60px rgba(26,58,122,0.15);
+    }
+    .gallery-item:nth-child(5) .gallery-front {
+      background: linear-gradient(135deg, #1a0a00 0%, #cc4400 100%);
+      border: 2px solid rgba(200,80,0,0.6);
+      box-shadow: 0 0 30px rgba(200,80,0,0.3), inset 0 0 60px rgba(200,80,0,0.1);
+    }
+    .gallery-item:nth-child(6) .gallery-front {
+      background: linear-gradient(135deg, #0a001a 0%, #6600cc 100%);
+      border: 2px solid rgba(100,0,200,0.5);
+      box-shadow: 0 0 30px rgba(100,0,200,0.3), inset 0 0 60px rgba(100,0,200,0.1);
+    }
+
+    /* Back face — all same dark red info style */
+    .gallery-front .gallery-icon,
+    .gallery-back .gallery-icon { font-size: 3.5rem; filter: drop-shadow(0 0 12px rgba(255,255,255,0.6)); }
+    .gallery-front .gallery-label {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.2rem; letter-spacing: 3px; color: var(--white);
+      text-shadow: 0 0 20px rgba(255,255,255,0.5);
+      text-transform: uppercase;
+    }
+    .gallery-front .gallery-hint {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.6rem; letter-spacing: 3px; color: rgba(255,255,255,0.5);
+      text-transform: uppercase;
+    }
+
+    .gallery-back {
+      background: linear-gradient(135deg, var(--red-dark) 0%, #1a0005 100%);
+      border: 2px solid var(--red);
+      box-shadow: 0 0 40px rgba(224,0,27,0.4);
+      padding: 24px; text-align: center;
+    }
+    .gallery-back .gallery-icon { font-size: 2.8rem; margin-bottom: 4px; }
+    .gallery-back-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.4rem; letter-spacing: 3px; color: var(--white);
+      margin-bottom: 8px;
+    }
+    .gallery-back-desc {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.78rem; line-height: 1.6; color: rgba(255,255,255,0.8);
+      margin-bottom: 14px;
+    }
+    .gallery-back-tag {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.65rem; letter-spacing: 3px; text-transform: uppercase;
+      color: var(--red); border: 1px solid var(--red);
+      padding: 5px 12px; display: inline-block;
+    }
+
+    /* Glow pulse on front */
+    .gallery-front::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    /* ───── TESTIMONIALS ───── */
+    .testimonials-section {
+      padding: 90px 6%;
+      background: var(--dark2);
+    }
+    .testimonials-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 28px;
+    }
+    .testimonial-card {
+      background: var(--dark);
+      border: 1px solid rgba(255,255,255,0.06);
+      padding: 36px;
+      position: relative;
+    }
+    .testimonial-quote {
+      font-size: 4rem; line-height: 0.8;
+      color: var(--red); opacity: 0.4;
+      font-family: Georgia, serif;
+      margin-bottom: 16px;
+    }
+    .testimonial-text {
+      font-size: 0.95rem; line-height: 1.8; color: var(--light-gray);
+      margin-bottom: 24px; font-style: italic;
+    }
+    .testimonial-author {
+      display: flex; align-items: center; gap: 14px;
+    }
+    .author-avatar {
+      width: 44px; height: 44px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--red), var(--blue));
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Bebas Neue', sans-serif; font-size: 1.1rem; color: var(--white);
+    }
+    .author-info {}
+    .author-name {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.9rem; color: var(--white); font-weight: 600;
+    }
+    .author-detail {
+      font-size: 0.75rem; color: var(--gray);
+    }
+    .stars { color: var(--red); font-size: 0.8rem; margin-bottom: 16px; }
+
+    /* ───── CTA ───── */
+    .cta-section {
+      padding: 90px 6%;
+      background: linear-gradient(135deg, var(--red-dark) 0%, var(--red) 50%, var(--red-dark) 100%);
+      text-align: center; position: relative; overflow: hidden;
+    }
+    .cta-section::before {
+      content: '';
+      position: absolute; inset: 0; opacity: 0.06;
+      background-image: repeating-linear-gradient(
+        45deg, var(--white) 0, var(--white) 1px, transparent 0, transparent 50%
+      );
+      background-size: 25px 25px;
+    }
+    .cta-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2.5rem, 6vw, 5rem);
+      letter-spacing: 3px; color: var(--white); margin-bottom: 16px;
+      position: relative;
+    }
+    .cta-sub {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1rem; letter-spacing: 3px; color: rgba(255,255,255,0.8);
+      text-transform: uppercase; margin-bottom: 40px; position: relative;
+    }
+    .cta-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; position: relative; }
+    .btn-white {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.9rem; letter-spacing: 3px; text-transform: uppercase;
+      background: var(--white); color: var(--red);
+      border: none; cursor: pointer; padding: 16px 40px;
+      font-weight: 700; transition: all 0.25s;
+      text-decoration: none; display: inline-block;
+    }
+    .btn-white:hover { background: var(--black); color: var(--white); }
+    .btn-outline-white {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.9rem; letter-spacing: 3px; text-transform: uppercase;
+      background: transparent; color: var(--white);
+      border: 2px solid rgba(255,255,255,0.6); cursor: pointer; padding: 14px 38px;
+      font-weight: 500; transition: all 0.25s;
+      text-decoration: none; display: inline-block;
+    }
+    .btn-outline-white:hover { background: rgba(255,255,255,0.15); border-color: var(--white); }
+
+    /* ───── FOOTER ───── */
+    footer {
+      background: #050505;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding: 60px 6% 30px;
+    }
+    .footer-grid {
+      display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 60px;
+      margin-bottom: 50px;
+    }
+    .footer-brand-name {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.6rem; letter-spacing: 3px; color: var(--white); margin-bottom: 6px;
+    }
+    .footer-tagline {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.7rem; letter-spacing: 5px; color: var(--red);
+      text-transform: uppercase; margin-bottom: 18px;
+    }
+    .footer-desc {
+      font-size: 0.88rem; color: var(--gray); line-height: 1.8; max-width: 300px;
+    }
+    .footer-col-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.75rem; letter-spacing: 4px; color: var(--white);
+      text-transform: uppercase; margin-bottom: 20px;
+      border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 12px;
+    }
+    .footer-links { list-style: none; }
+    .footer-links li { margin-bottom: 10px; }
+    .footer-links li a {
+      font-size: 0.88rem; color: var(--gray); text-decoration: none; transition: color 0.2s;
+      cursor: pointer;
+    }
+    .footer-links li a:hover { color: var(--red); }
+    .footer-contact-item {
+      font-size: 0.88rem; color: var(--gray); margin-bottom: 10px;
+      display: flex; align-items: flex-start; gap: 8px;
+    }
+    .footer-contact-item a { color: var(--gray); text-decoration: none; }
+    .footer-contact-item a:hover { color: var(--red); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding-top: 24px;
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 12px;
+    }
+    .footer-copy {
+      font-size: 0.8rem; color: rgba(255,255,255,0.3);
+    }
+    .footer-legal {
+      display: flex; gap: 20px;
+    }
+    .footer-legal a {
+      font-size: 0.8rem; color: rgba(255,255,255,0.3); text-decoration: none;
+    }
+    .footer-legal a:hover { color: var(--red); }
+
+    /* ───── WHATSAPP FLOAT ───── */
+    .whatsapp-float {
+      position: fixed; bottom: 28px; right: 28px; z-index: 999;
+      width: 58px; height: 58px; border-radius: 50%;
+      background: #25d366;
+      display: flex; align-items: center; justify-content: center;
+      text-decoration: none; box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+      transition: all 0.3s;
+    }
+    .whatsapp-float:hover { transform: scale(1.12); box-shadow: 0 6px 28px rgba(37,211,102,0.55); }
+    .whatsapp-float svg { width: 30px; height: 30px; fill: white; }
+
+    /* ───── HAMBURGER MENU ───── */
+    .hamburger {
+      display: none; flex-direction: column; gap: 5px;
+      cursor: pointer; padding: 6px; background: none; border: none;
+    }
+    .hamburger span {
+      display: block; width: 24px; height: 2px;
+      background: var(--white); border-radius: 2px;
+      transition: all 0.3s;
+    }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* mobile nav drawer */
+    .mobile-nav {
+      display: none;
+      position: fixed; top: 70px; left: 0; right: 0;
+      background: rgba(10,10,10,0.98);
+      border-bottom: 2px solid var(--red);
+      z-index: 999; padding: 20px 6%;
+      flex-direction: column; gap: 4px;
+    }
+    .mobile-nav.open { display: flex; }
+    .mobile-nav a {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1rem; letter-spacing: 3px; text-transform: uppercase;
+      color: var(--light-gray); text-decoration: none;
+      padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.06);
+      transition: color 0.2s;
+    }
+    .mobile-nav a:hover, .mobile-nav a.active { color: var(--red); }
+    .mobile-nav .mobile-join {
+      margin-top: 12px;
+      background: var(--red); color: var(--white);
+      padding: 14px; text-align: center; border-radius: 2px;
+      font-weight: 700;
+    }
+
+    /* ───── RESPONSIVE: TABLET (max 1024px) ───── */
+    @media (max-width: 1024px) {
+      .hero-badge { right: 4%; }
+      .badge-circle { width: 160px; height: 160px; }
+      .badge-name { font-size: 1.4rem; }
+      .trainer-grid { gap: 40px; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    /* ───── RESPONSIVE: TABLET PORTRAIT (max 900px) ───── */
+    @media (max-width: 900px) {
+      .trainer-grid { grid-template-columns: 1fr; gap: 40px; }
+      .contact-section { grid-template-columns: 1fr; gap: 40px; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 30px; }
+      .hero-badge { display: none; }
+      .hero-stats { gap: 24px; }
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+      .hero-content { max-width: 100%; padding: 0 5%; }
+      .hero-red-bar { width: 55%; opacity: 0.5; }
+      .ages-banner { flex-direction: column; gap: 16px; text-align: center; }
+      .section-header { margin-bottom: 40px; }
+      .trainer-section, .timings-section, .gallery-section,
+      .testimonials-section, .services-grid-section, .why-section,
+      .map-section { padding: 70px 5%; }
+      .cta-section { padding: 70px 5%; }
+    }
+
+    /* ───── RESPONSIVE: MOBILE (max 768px) ───── */
+    @media (max-width: 768px) {
+      /* Navbar */
+      .nav-links { display: none; }
+      .nav-cta { display: none; }
+      .hamburger { display: flex; }
+
+      /* Hero */
+      .hero { min-height: 100svh; padding-top: 70px; align-items: center; }
+      .hero-content { padding: 30px 5% 120px; max-width: 100%; }
+      .hero-title { font-size: clamp(2.8rem, 12vw, 5rem); }
+      .hero-tagline { font-size: 0.9rem; letter-spacing: 4px; }
+      .hero-desc { font-size: 0.9rem; }
+      .hero-btns { flex-direction: column; gap: 12px; }
+      .btn-primary, .btn-outline { width: 100%; text-align: center; padding: 15px; }
+      .hero-stats { margin-top: 32px; gap: 24px; flex-wrap: wrap; }
+      .hero-red-bar { display: none; }
+      .hero-badge { display: none; }
+
+      /* Sections */
+      .trainer-section { padding: 60px 5%; }
+      .trainer-highlights { grid-template-columns: 1fr 1fr; }
+      .timings-section { padding: 60px 5%; }
+      .timings-grid { grid-template-columns: 1fr; }
+      .gallery-section { padding: 60px 5%; }
+      .gallery-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+      .testimonials-section { padding: 60px 5%; }
+      .testimonials-grid { grid-template-columns: 1fr; }
+      .services-grid { grid-template-columns: 1fr; gap: 2px; }
+      .why-grid { grid-template-columns: 1fr 1fr; gap: 24px; }
+      .contact-section { padding: 50px 5%; }
+      .map-section { padding: 0 5% 60px; }
+
+      /* Footer */
+      .footer-grid { grid-template-columns: 1fr; gap: 30px; }
+      .footer-bottom { flex-direction: column; text-align: center; gap: 10px; }
+
+      /* Form */
+      .form-row { grid-template-columns: 1fr; }
+
+      /* CTA */
+      .cta-btns { flex-direction: column; align-items: center; }
+      .btn-white, .btn-outline-white { width: 100%; max-width: 300px; text-align: center; }
+    }
+
+    /* ───── RESPONSIVE: SMALL MOBILE (max 480px) ───── */
+    @media (max-width: 480px) {
+      .hero-title { font-size: clamp(2.4rem, 13vw, 3.5rem); }
+      .trainer-highlights { grid-template-columns: 1fr; }
+      .gallery-grid { grid-template-columns: 1fr; }
+      .why-grid { grid-template-columns: 1fr; }
+      .hero-stats { gap: 16px; }
+      .stat-num { font-size: 2rem; }
+      .services-hero, .contact-hero { padding: 90px 5% 40px; }
+      .services-hero-title h1 { font-size: clamp(2.5rem, 12vw, 4rem); }
+      .ages-text { font-size: 1.4rem; }
+      .nav-brand-main { font-size: 1rem; }
+      .whatsapp-float { bottom: 16px; right: 16px; width: 50px; height: 50px; }
+    }
+    /* ───── INSTAGRAM CAROUSEL ───── */
+    .insta-section {
+      padding: 90px 6%;
+      background: var(--dark);
+    }
+    .insta-handle {
+      display: inline-block; margin-top: 12px;
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.8rem; letter-spacing: 3px;
+      color: var(--gray); text-decoration: none;
+      transition: color 0.2s;
+    }
+    .insta-handle:hover { color: var(--red); }
+
+    .insta-carousel-wrapper {
+      display: flex; align-items: center; gap: 16px;
+      position: relative;
+    }
+    .insta-track-outer {
+      overflow: hidden; flex: 1;
+    }
+    .insta-track {
+      display: flex; gap: 16px;
+      transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+      will-change: transform;
+    }
+    .insta-card {
+      flex: 0 0 calc(33.333% - 11px);
+      background: var(--dark2);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 4px; overflow: hidden;
+      transition: transform 0.3s, border-color 0.3s;
+    }
+    .insta-card:hover { transform: translateY(-4px); border-color: rgba(224,0,27,0.3); }
+
+    .insta-img-wrap {
+      position: relative; aspect-ratio: 1/1;
+      background: var(--black);
+      display: flex; align-items: center; justify-content: center;
+      overflow: hidden; cursor: pointer;
+    }
+    .insta-placeholder {
+      font-size: 4rem;
+      transition: transform 0.3s;
+    }
+    .insta-card:hover .insta-placeholder { transform: scale(1.1); }
+
+    .insta-overlay {
+      position: absolute; inset: 0;
+      background: rgba(0,0,0,0.55);
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0; transition: opacity 0.3s;
+    }
+    .insta-card:hover .insta-overlay { opacity: 1; }
+    .insta-overlay-icon {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.9rem; color: var(--white); letter-spacing: 2px;
+    }
+    .insta-caption {
+      padding: 14px 16px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.78rem; color: var(--gray); line-height: 1.5;
+    }
+
+    .insta-arrow {
+      background: var(--dark2); border: 1px solid rgba(255,255,255,0.1);
+      color: var(--white); font-size: 2rem; line-height: 1;
+      width: 44px; height: 44px; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      border-radius: 2px; flex-shrink: 0;
+      transition: all 0.2s;
+    }
+    .insta-arrow:hover { background: var(--red); border-color: var(--red); }
+
+    .insta-dots {
+      display: flex; justify-content: center; gap: 8px; margin-top: 24px;
+    }
+    .insta-dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: rgba(255,255,255,0.15); cursor: pointer;
+      transition: all 0.3s; border: none;
+    }
+    .insta-dot.active { background: var(--red); transform: scale(1.3); }
+
+    .insta-follow-btn {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.85rem; letter-spacing: 3px; text-transform: uppercase;
+      background: transparent; color: var(--white);
+      border: 2px solid rgba(255,255,255,0.3);
+      padding: 14px 36px; text-decoration: none;
+      display: inline-block; transition: all 0.25s;
+    }
+    .insta-follow-btn:hover { background: var(--red); border-color: var(--red); }
+
+    @media (max-width: 900px) {
+      .insta-card { flex: 0 0 calc(50% - 8px); }
+    }
+    @media (max-width: 600px) {
+      .insta-card { flex: 0 0 100%; }
+      .insta-section { padding: 60px 5%; }
+    }
+    /* ───── STACKING CARDS ───── */
+    .stack-section {
+      padding: 90px 6% 0;
+      background: var(--black);
+    }
+    .stack-container {
+      position: relative;
+      padding-bottom: 80px;
+    }
+    .stack-card {
+      position: sticky;
+      margin-bottom: 28px;
+      background: var(--card-bg, #0f0005);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.7);
+    }
+    .stack-card:nth-child(1) { top: 90px; }
+    .stack-card:nth-child(2) { top: 110px; }
+    .stack-card:nth-child(3) { top: 130px; }
+    .stack-card:nth-child(4) { top: 150px; }
+
+    .stack-card::before {
+      content: '';
+      position: absolute; left: 0; top: 0; right: 0;
+      height: 4px;
+      background: var(--card-accent);
+      box-shadow: 0 0 20px var(--card-accent);
+      z-index: 2;
+    }
+    .stack-card::after {
+      content: '';
+      position: absolute; left: 0; top: 0; bottom: 0;
+      width: 4px;
+      background: var(--card-accent);
+      opacity: 0.5;
+      z-index: 2;
+    }
+    .stack-card-inner {
+      display: grid;
+      grid-template-columns: 1fr 280px;
+      gap: 0;
+      padding: 60px 64px;
+      align-items: center;
+      position: relative;
+      min-height: 320px;
+    }
+    .stack-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 22rem;
+      color: var(--card-accent);
+      opacity: 0.04;
+      line-height: 1;
+      position: absolute;
+      right: -20px; bottom: -40px;
+      pointer-events: none;
+      user-select: none;
+    }
+    .stack-content { position: relative; z-index: 2; }
+    .stack-tag {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.7rem; letter-spacing: 5px;
+      color: var(--card-accent); text-transform: uppercase;
+      margin-bottom: 14px; display: block;
+    }
+    .stack-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(4rem, 8vw, 7rem);
+      letter-spacing: 4px; color: var(--white);
+      line-height: 0.9; margin-bottom: 24px;
+    }
+    .stack-desc {
+      font-size: 1rem; line-height: 1.8;
+      color: rgba(255,255,255,0.65);
+      max-width: 520px; margin-bottom: 28px;
+    }
+    .stack-pills {
+      display: flex; gap: 10px; flex-wrap: wrap;
+    }
+    .stack-pill {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.68rem; letter-spacing: 2px; text-transform: uppercase;
+      border: 1px solid var(--card-accent);
+      color: var(--card-accent);
+      padding: 6px 16px; border-radius: 2px;
+      background: rgba(255,255,255,0.02);
+    }
+    .stack-icon-wrap {
+      display: flex; align-items: center; justify-content: center;
+      position: relative; z-index: 2;
+    }
+    .stack-icon {
+      font-size: 8rem;
+      filter: drop-shadow(0 0 30px var(--card-accent));
+      animation: iconFloat 3s ease-in-out infinite;
+      display: inline-block;
+    }
+    @keyframes iconFloat {
+      0%, 100% { transform: translateY(0); }
+      50%       { transform: translateY(-14px); }
+    }
+    .stack-card:nth-child(2) .stack-icon { animation-delay: 0.5s; }
+    .stack-card:nth-child(3) .stack-icon { animation-delay: 1s; }
+    .stack-card:nth-child(4) .stack-icon { animation-delay: 1.5s; }
+
+    @media (max-width: 900px) {
+      .stack-card-inner {
+        grid-template-columns: 1fr;
+        padding: 48px 36px;
+        min-height: unset;
+      }
+      .stack-icon-wrap { display: none; }
+      .stack-num { font-size: 12rem; right: -10px; bottom: -20px; }
+      .stack-title { font-size: clamp(3rem, 10vw, 5rem); }
+    }
+    @media (max-width: 600px) {
+      .stack-card-inner { padding: 36px 24px; }
+      .stack-card:nth-child(1) { top: 75px; }
+      .stack-card:nth-child(2) { top: 90px; }
+      .stack-card:nth-child(3) { top: 105px; }
+      .stack-card:nth-child(4) { top: 120px; }
+    }
+    /* ───── PRICING + GALLERY PAGE ───── */
+    .pricing-hero {
+      background: linear-gradient(135deg, #0a0a0a 0%, #1a0005 50%, #0a0a0a 100%);
+      padding: 120px 6% 80px;
+      border-bottom: 1px solid rgba(224,0,27,0.2);
+      text-align: center;
+    }
+    .pricing-hero-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(3.5rem, 10vw, 7rem);
+      letter-spacing: 6px; color: var(--white); line-height: 1;
+      margin: 16px 0 20px;
+    }
+    .pricing-hero-title span { color: var(--red); }
+    .pricing-hero-sub { font-size: 0.9rem; color: var(--gray); letter-spacing: 2px; }
+
+    /* Monthly Table */
+    .pricing-section { padding: 90px 6%; background: var(--black); }
+    .pricing-table-wrap { overflow-x: auto; }
+    .pricing-table {
+      width: 100%; border-collapse: collapse;
+      font-family: 'Oswald', sans-serif;
+      margin-bottom: 32px;
+    }
+    .pricing-table thead tr {
+      background: var(--red);
+    }
+    .pricing-table th {
+      padding: 18px 24px; text-align: left;
+      font-size: 0.8rem; letter-spacing: 3px; color: var(--white);
+      text-transform: uppercase;
+    }
+    .pricing-table td {
+      padding: 16px 24px;
+      font-size: 0.95rem; color: var(--white);
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .pricing-table tbody tr { background: var(--dark2); transition: background 0.2s; }
+    .pricing-table tbody tr:hover { background: rgba(224,0,27,0.06); }
+    .pricing-table tbody tr:nth-child(even) { background: rgba(255,255,255,0.02); }
+    .pricing-table tbody tr:nth-child(even):hover { background: rgba(224,0,27,0.06); }
+    .highlight-row td { color: #f0c040 !important; font-weight: 600; }
+    .free-row td { background: rgba(0,204,136,0.05) !important; }
+    .reg-badge {
+      display: inline-block;
+      background: var(--red);
+      color: var(--white);
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.8rem; letter-spacing: 3px;
+      padding: 12px 32px; border-radius: 2px;
+      margin-top: 8px;
+    }
+
+    /* Long Term Plans */
+    .plans-section { padding: 90px 6%; background: var(--dark); }
+    .plans-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .plan-card {
+      background: var(--dark2);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 6px; overflow: hidden;
+      transition: transform 0.3s, border-color 0.3s;
+    }
+    .plan-card:hover { transform: translateY(-6px); border-color: rgba(224,0,27,0.3); }
+    .plan-header {
+      padding: 28px 24px 20px;
+      display: flex; align-items: center; gap: 16px;
+    }
+    .plan-icon { font-size: 2.2rem; }
+    .plan-name {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.6rem; letter-spacing: 3px; color: var(--white);
+    }
+    .plan-body { padding: 20px 24px 24px; }
+    .plan-row {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.85rem; color: var(--gray);
+    }
+    .plan-row.best {
+      color: var(--white);
+      border-bottom: none;
+    }
+    .plan-prices { color: var(--red); font-size: 0.9rem; }
+    .plan-row.best .plan-prices { color: #f0c040; font-size: 1rem; }
+
+    /* Gallery */
+    .gallery-page-section { padding: 90px 6%; background: var(--black); }
+    .gallery-page-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 220px;
+      gap: 12px;
+    }
+    .gp-wide { grid-column: span 2; }
+    .gp-card {
+      background: var(--dark2);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 4px;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      gap: 12px; cursor: pointer; overflow: hidden;
+      position: relative;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+    .gp-card:hover { border-color: rgba(224,0,27,0.4); transform: scale(1.02); }
+    .gp-placeholder { font-size: 3.5rem; }
+    .gp-label {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.75rem; letter-spacing: 3px;
+      color: var(--gray); text-transform: uppercase;
+    }
+    .gallery-note {
+      text-align: center; margin-top: 28px;
+      font-size: 0.82rem; color: var(--gray); letter-spacing: 1px;
+    }
+
+    @media (max-width: 768px) {
+      .gallery-page-grid { grid-template-columns: repeat(2, 1fr); }
+      .gp-wide { grid-column: span 2; }
+      .plans-grid { grid-template-columns: 1fr; }
+      .pricing-table th, .pricing-table td { padding: 12px 14px; font-size: 0.8rem; }
+    }
+    @media (max-width: 480px) {
+      .gallery-page-grid { grid-template-columns: 1fr; }
+      .gp-wide { grid-column: span 1; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-logo" onclick="goTo('home')">
+    <img src="umf-logo.svg" alt="Unbent Martial Fitness Logo" class="nav-logo-img">
+    <div class="nav-brand">
+      <span class="nav-brand-main">UNBENT MARTIAL FITNESS</span>
+      <span class="nav-brand-sub">Mind · Body · Spirit</span>
+    </div>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="#" id="nav-home" class="active" onclick="goTo('home'); return false;">Home</a></li>
+    <li><a href="#" id="nav-services" onclick="goTo('services'); return false;">Services</a></li>
+    <li><a href="#" id="nav-pricing" onclick="goTo('pricing'); return false;">Pricing</a></li>
+    <li><a href="#" id="nav-contact" onclick="goTo('contact'); return false;">Contact</a></li>
+  </ul>
+
+  <button class="nav-cta" onclick="goTo('contact')">Join Now</button>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE NAV DRAWER -->
+<div class="mobile-nav" id="mobile-nav">
+  <a href="#" id="mnav-home" class="active" onclick="goTo('home'); closeMenu(); return false;">Home</a>
+  <a href="#" id="mnav-services" onclick="goTo('services'); closeMenu(); return false;">Services</a>
+  <a href="#" id="mnav-pricing" onclick="goTo('pricing'); closeMenu(); return false;">Pricing</a>
+  <a href="#" id="mnav-contact" onclick="goTo('contact'); closeMenu(); return false;">Contact</a>
+  <a class="mobile-join" onclick="goTo('contact'); closeMenu();">Join Now →</a>
+</div>
+
+
+<!-- ═══════════════ PAGE: HOME ═══════════════ -->
+<div id="page-home" class="page active">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg-pattern"></div>
+    <div class="hero-red-bar"></div>
+
+
+    <div class="hero-content">
+      <div class="hero-tag">Est. Uppal, Hyderabad</div>
+      <h1 class="hero-title">UNBENT<br><span>MARTIAL</span><br>FITNESS</h1>
+      <div class="hero-tagline">Mind · Body · Spirit</div>
+      <p class="hero-desc">
+        Train with certified India Coach Master Shaik Taher. From MMA to Self-Defense,
+        we forge champions of all ages at UMF Academy — Prashanth Nagar, Uppal.
+      </p>
+      <div class="hero-btns">
+        <button class="btn-primary" onclick="goTo('contact')">Join Now</button>
+        <button class="btn-outline" onclick="goTo('services')">Our Programs</button>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat"><div class="stat-num">10+</div><div class="stat-label">Disciplines</div></div>
+        <div class="stat"><div class="stat-num">All</div><div class="stat-label">Ages Welcome</div></div>
+        <div class="stat"><div class="stat-num">6</div><div class="stat-label">Days a Week</div></div>
+      </div>
+    </div>
+
+    <div class="hero-badge">
+      <div class="badge-circle">
+        <div class="badge-master">Master</div>
+        <div class="badge-name">SHAIK<br><span>TAHER</span></div>
+        <div class="badge-title">India Coach · UMF</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAINER -->
+  <section class="trainer-section">
+    <div class="section-header">
+      <span class="section-tag">Meet Your Coach</span>
+      <h2 class="section-title">THE <span>MASTER</span></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="trainer-grid">
+      <div class="trainer-visual">
+        <div class="trainer-card">
+          <div class="trainer-avatar">ST</div>
+          <div class="trainer-card-name">SHAIK TAHER</div>
+          <div class="trainer-card-role">Certified India Coach · UMF Founder</div>
+          <div class="trainer-cert-bar">
+            <span class="cert-badge">MMA</span>
+            <span class="cert-badge">Boxing</span>
+            <span class="cert-badge">Karate</span>
+            <span class="cert-badge">India Coach</span>
+          </div>
+        </div>
+      </div>
+      <div class="trainer-content">
+        <div class="trainer-intro">Founder & Head Coach</div>
+        <div class="trainer-name-big">MASTER<br>SHAIK <span>TAHER</span></div>
+        <p class="trainer-bio">
+          Master Shaik Taher is a nationally recognized martial arts coach and the founder of
+          Unbent Martial Fitness Pvt Ltd. With years of dedicated training and coaching experience,
+          he brings world-class martial arts instruction to Hyderabad, welcoming students of all
+          ages and backgrounds into the UMF family.
+        </p>
+        <p class="trainer-bio">
+          At UMF Academy, every student receives personalized attention, disciplined training,
+          and the motivation to push beyond their limits — building not just fighters, but
+          confident, focused individuals.
+        </p>
+        <div class="trainer-highlights">
+          <div class="highlight">
+            <div class="highlight-val">10+</div>
+            <div class="highlight-key">Disciplines Taught</div>
+          </div>
+          <div class="highlight">
+            <div class="highlight-val">All Ages</div>
+            <div class="highlight-key">Admissions Open</div>
+          </div>
+          <div class="highlight">
+            <div class="highlight-val">India</div>
+            <div class="highlight-key">Certified Coach</div>
+          </div>
+          <div class="highlight">
+            <div class="highlight-val">UMF</div>
+            <div class="highlight-key">Pvt Ltd Academy</div>
+          </div>
+        </div>
+        <button class="btn-primary" onclick="goTo('contact')">Train With Master Taher</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMINGS -->
+  <section class="timings-section">
+    <div class="section-header">
+      <span class="section-tag">Schedule</span>
+      <h2 class="section-title">BATCH <span>TIMINGS</span></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="timings-grid">
+      <div class="timing-card">
+        <div class="timing-icon">🌅</div>
+        <div class="timing-label">Morning Batch</div>
+        <div class="timing-time">6 AM – 11 AM</div>
+        <div class="timing-days">Monday to Saturday</div>
+        <div class="timing-note">Early risers · All disciplines</div>
+      </div>
+      <div class="timing-card">
+        <div class="timing-icon">🌆</div>
+        <div class="timing-label">Evening Batch</div>
+        <div class="timing-time">5 PM – 9 PM</div>
+        <div class="timing-days">Monday to Saturday</div>
+        <div class="timing-note">After school / work · All disciplines</div>
+      </div>
+      <a href="https://maps.google.com/?cid=8459033406631461254" target="_blank" style="text-decoration:none;">
+        <div class="timing-card" style="cursor:pointer;">
+          <div class="timing-icon">📍</div>
+          <div class="timing-label">Location</div>
+          <div class="timing-time" style="font-size:1.5rem; line-height:1.2;">Prashanth Nagar</div>
+          <div class="timing-days">Uppal, Hyderabad (Above SBI Bank)</div>
+          <div class="timing-note">Tap to open in Google Maps →</div>
+        </div>
+      </a>
+    </div>
+    <div class="ages-banner">
+      <div>
+        <div class="ages-text">ADMISSIONS OPEN FOR ALL AGES</div>
+        <div class="ages-sub">Kids, teens, adults & seniors — everyone is welcome at UMF Academy</div>
+      </div>
+      <button class="btn-white" onclick="goTo('contact')">Enroll Today →</button>
+    </div>
+  </section>
+
+  <!-- GALLERY PREVIEW -->
+  <section class="gallery-section">
+    <div class="section-header">
+      <span class="section-tag">Academy Views</span>
+      <h2 class="section-title">UMF <span>ACADEMY</span></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="gallery-grid">
+
+      <div class="gallery-item">
+        <div class="gallery-flip">
+          <div class="gallery-front">
+            <div class="gallery-icon">🥊</div>
+            <div class="gallery-label">Training Hall</div>
+            <div class="gallery-hint">Hover to explore</div>
+          </div>
+          <div class="gallery-back">
+            <div class="gallery-icon">🥊</div>
+            <div class="gallery-back-title">Training Hall</div>
+            <div class="gallery-back-desc">State-of-the-art training floor with heavy bags, mats, and full sparring equipment for all disciplines.</div>
+            <span class="gallery-back-tag">UMF Academy</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="gallery-flip">
+          <div class="gallery-front">
+            <div class="gallery-icon">🥊</div>
+            <div class="gallery-label">Boxing Ring</div>
+            <div class="gallery-hint">Hover to explore</div>
+          </div>
+          <div class="gallery-back">
+            <div class="gallery-icon">🥊</div>
+            <div class="gallery-back-title">Boxing Ring</div>
+            <div class="gallery-back-desc">Professional full-size boxing ring for sparring sessions, competitions, and advanced training.</div>
+            <span class="gallery-back-tag">Professional Setup</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="gallery-flip">
+          <div class="gallery-front">
+            <div class="gallery-icon">🏆</div>
+            <div class="gallery-label">Champions</div>
+            <div class="gallery-hint">Hover to explore</div>
+          </div>
+          <div class="gallery-back">
+            <div class="gallery-icon">🏆</div>
+            <div class="gallery-back-title">Champions</div>
+            <div class="gallery-back-desc">UMF students compete and win at local and national levels — building champions on and off the mat.</div>
+            <span class="gallery-back-tag">Winners Circle</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="gallery-flip">
+          <div class="gallery-front">
+            <div class="gallery-icon">⚔️</div>
+            <div class="gallery-label">Kids Batch</div>
+            <div class="gallery-hint">Hover to explore</div>
+          </div>
+          <div class="gallery-back">
+            <div class="gallery-icon">⚔️</div>
+            <div class="gallery-back-title">Kids Batch</div>
+            <div class="gallery-back-desc">Specially designed training for children — building discipline, focus, and confidence from an early age.</div>
+            <span class="gallery-back-tag">All Ages Welcome</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="gallery-flip">
+          <div class="gallery-front">
+            <div class="gallery-icon">🎯</div>
+            <div class="gallery-label">Group Training</div>
+            <div class="gallery-hint">Hover to explore</div>
+          </div>
+          <div class="gallery-back">
+            <div class="gallery-icon">🎯</div>
+            <div class="gallery-back-title">Group Training</div>
+            <div class="gallery-back-desc">Energy-packed group sessions that build team spirit, push limits, and accelerate skill development.</div>
+            <span class="gallery-back-tag">Team Spirit</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="gallery-flip">
+          <div class="gallery-front">
+            <div class="gallery-icon">💪</div>
+            <div class="gallery-label">Fitness Zone</div>
+            <div class="gallery-hint">Hover to explore</div>
+          </div>
+          <div class="gallery-back">
+            <div class="gallery-icon">💪</div>
+            <div class="gallery-back-title">Fitness Zone</div>
+            <div class="gallery-back-desc">CrossFit and conditioning area to build the strength, endurance, and power every martial artist needs.</div>
+            <span class="gallery-back-tag">Strength & Power</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials-section">
+    <div class="section-header">
+      <span class="section-tag">Student Reviews</span>
+      <h2 class="section-title">WHAT THEY <span>SAY</span></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <div class="testimonial-quote">"</div>
+        <p class="testimonial-text">Master Taher's coaching is incredible. My son joined for karate and now he's more confident, disciplined and focused in school too. Best decision we made!</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">RK</div>
+          <div class="author-info">
+            <div class="author-name">Ravi Kumar</div>
+            <div class="author-detail">Parent · Karate</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <div class="testimonial-quote">"</div>
+        <p class="testimonial-text">I joined UMF for boxing 6 months ago. The training is intense but structured perfectly. Master Taher personally tracks your progress. Amazing academy!</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">PS</div>
+          <div class="author-info">
+            <div class="author-name">Priya Sharma</div>
+            <div class="author-detail">Student · Boxing</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <div class="testimonial-quote">"</div>
+        <p class="testimonial-text">The self-defense classes at UMF gave me the confidence to walk anywhere. Great environment, professional trainers. Highly recommend to all women!</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">SN</div>
+          <div class="author-info">
+            <div class="author-name">Sneha Nair</div>
+            <div class="author-detail">Student · Self Defense</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- INSTAGRAM CAROUSEL -->
+  <section class="insta-section">
+    <div class="section-header">
+      <span class="section-tag">Follow Us</span>
+      <h2 class="section-title">UMF ON <span>INSTAGRAM</span></h2>
+      <div class="section-line"></div>
+      <a class="insta-handle" href="https://www.instagram.com/unbentmartialfitness" target="_blank">@unbentmartialfitness</a>
+    </div>
+
+    <div class="insta-carousel-wrapper">
+      <button class="insta-arrow insta-prev" onclick="instaSlide(-1)">&#8249;</button>
+      <div class="insta-track-outer">
+        <div class="insta-track" id="instaTrack">
+
+          <div class="insta-card">
+            <div class="insta-img-wrap">
+              <div class="insta-placeholder">🥊</div>
+              <div class="insta-overlay"><div class="insta-overlay-icon">❤️ 124 &nbsp; 💬 18</div></div>
+            </div>
+            <div class="insta-caption">Morning batch in full swing! 💪 #UMF #MMA #Hyderabad</div>
+          </div>
+
+          <div class="insta-card">
+            <div class="insta-img-wrap">
+              <div class="insta-placeholder">🥋</div>
+              <div class="insta-overlay"><div class="insta-overlay-icon">❤️ 98 &nbsp; 💬 12</div></div>
+            </div>
+            <div class="insta-caption">Karate black belt training session 🎌 #Karate #MartialArts</div>
+          </div>
+
+          <div class="insta-card">
+            <div class="insta-img-wrap">
+              <div class="insta-placeholder">🏆</div>
+              <div class="insta-overlay"><div class="insta-overlay-icon">❤️ 210 &nbsp; 💬 34</div></div>
+            </div>
+            <div class="insta-caption">Our champions at the regional competition 🏆 #UMFChampions</div>
+          </div>
+
+          <div class="insta-card">
+            <div class="insta-img-wrap">
+              <div class="insta-placeholder">⚔️</div>
+              <div class="insta-overlay"><div class="insta-overlay-icon">❤️ 87 &nbsp; 💬 9</div></div>
+            </div>
+            <div class="insta-caption">Kids batch crushing it today! 🌟 #KidsKarate #UMFKids</div>
+          </div>
+
+          <div class="insta-card">
+            <div class="insta-img-wrap">
+              <div class="insta-placeholder">🛡️</div>
+              <div class="insta-overlay"><div class="insta-overlay-icon">❤️ 156 &nbsp; 💬 22</div></div>
+            </div>
+            <div class="insta-caption">Women's self defense — empowering every session 💪 #SelfDefense</div>
+          </div>
+
+          <div class="insta-card">
+            <div class="insta-img-wrap">
+              <div class="insta-placeholder">💪</div>
+              <div class="insta-overlay"><div class="insta-overlay-icon">❤️ 143 &nbsp; 💬 17</div></div>
+            </div>
+            <div class="insta-caption">CrossFit conditioning — building warriors 🔥 #CrossFit #UMF</div>
+          </div>
+
+        </div>
+      </div>
+      <button class="insta-arrow insta-next" onclick="instaSlide(1)">&#8250;</button>
+    </div>
+
+    <div class="insta-dots" id="instaDots"></div>
+
+    <div style="text-align:center; margin-top: 36px;">
+      <a class="insta-follow-btn" href="https://www.instagram.com/unbentmartialfitness" target="_blank">
+        📷 Follow on Instagram
+      </a>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2 class="cta-title">START YOUR JOURNEY TODAY</h2>
+    <p class="cta-sub">Admissions open · All ages · All levels</p>
+    <div class="cta-btns">
+      <button class="btn-white" onclick="goTo('contact')">Enroll Now</button>
+      <a class="btn-outline-white" href="tel:9908455835">📞 Call Us</a>
+    </div>
+  </section>
+
+</div><!-- end page-home -->
+
+
+<!-- ═══════════════ PAGE: SERVICES ═══════════════ -->
+<div id="page-services" class="page">
+
+  <section class="services-hero">
+    <div class="services-hero-title">
+      <h1>OUR <span>PROGRAMS</span></h1>
+      <p>World-class martial arts · All disciplines · All ages</p>
+    </div>
+  </section>
+
+  <section class="services-grid-section">
+    <div class="section-header">
+      <span class="section-tag">Disciplines</span>
+      <h2 class="section-title">WHAT WE <span>TEACH</span></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-num">01</div>
+        <div class="service-icon">🥊</div>
+        <div class="service-name">MMA</div>
+        <p class="service-desc">Mixed Martial Arts training combining the most effective techniques from multiple disciplines. Build total fighting capability and elite fitness.</p>
+        <span class="service-tag">All levels</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-num">02</div>
+        <div class="service-icon">🥋</div>
+        <div class="service-name">Boxing</div>
+        <p class="service-desc">Classic boxing with professional ring training. Develop footwork, punch combinations, speed, and ring intelligence under expert guidance.</p>
+        <span class="service-tag">Beginners welcome</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-num">03</div>
+        <div class="service-icon">⚡</div>
+        <div class="service-name">Kick-Boxing</div>
+        <p class="service-desc">Powerful combination of punching and kicking techniques. Excellent for fitness, self-defense, and competitive training at all skill levels.</p>
+        <span class="service-tag">High intensity</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-num">04</div>
+        <div class="service-icon">🎌</div>
+        <div class="service-name">Karate</div>
+        <p class="service-desc">Traditional karate from white belt to black belt. Discipline, respect, precision strikes, and kata forms taught with authentic methodology.</p>
+        <span class="service-tag">Kids & adults</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-num">05</div>
+        <div class="service-icon">🤸</div>
+        <div class="service-name">Gymnastics</div>
+        <p class="service-desc">Build flexibility, coordination, and body control through structured gymnastics training — the foundation of great martial arts movement.</p>
+        <span class="service-tag">All ages</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-num">06</div>
+        <div class="service-icon">💪</div>
+        <div class="service-name">CrossFit Workouts</div>
+        <p class="service-desc">High-intensity functional fitness training tailored for martial artists. Build endurance, power, and the physical base needed for combat sports.</p>
+        <span class="service-tag">Strength & conditioning</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-num">07</div>
+        <div class="service-icon">⚔️</div>
+        <div class="service-name">Nunchaku</div>
+        <p class="service-desc">Master the iconic nunchaku weapon — coordination, speed, and rhythm training that sharpens reflexes and impresses at any performance.</p>
+        <span class="service-tag">Weapons training</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-num">08</div>
+        <div class="service-icon">🏹</div>
+        <div class="service-name">Bo-Staff (Stick)</div>
+        <p class="service-desc">Traditional staff weapon training. Develop reach, timing, and weapon handling skills through systematic drills and forms practice.</p>
+        <span class="service-tag">Weapons training</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-num">09</div>
+        <div class="service-icon">🗡️</div>
+        <div class="service-name">Sword Training</div>
+        <p class="service-desc">Classical sword techniques combining historical martial arts with modern practice. Build focus, discipline, and exceptional weapon skills.</p>
+        <span class="service-tag">Advanced</span>
+      </div>
+
+      <div class="service-card" style="grid-column: span 1;">
+        <div class="service-num">10</div>
+        <div class="service-icon">🛡️</div>
+        <div class="service-name">Self Defense</div>
+        <p class="service-desc">Practical self-defense techniques specifically designed for girls and women. Learn situational awareness, escape techniques, and confident response. <strong style="color:var(--red)">Girls / Women's special program.</strong></p>
+        <span class="service-tag">Women's special</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHY UMF -->
+  <section class="why-section">
+    <div class="section-header">
+      <span class="section-tag">Why Choose Us</span>
+      <h2 class="section-title">THE UMF <span>ADVANTAGE</span></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="why-icon-wrap">🏆</div>
+        <div class="why-title">Certified Coach</div>
+        <p class="why-desc">Trained under Master Shaik Taher — a nationally certified India Coach with years of professional martial arts experience.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-icon-wrap">👨‍👩‍👧‍👦</div>
+        <div class="why-title">All Ages Welcome</div>
+        <p class="why-desc">From young children to adults, UMF offers tailored programs for every age group and fitness level with individualized attention.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-icon-wrap">🥊</div>
+        <div class="why-title">Professional Facilities</div>
+        <p class="why-desc">Full-size boxing ring, heavy bags, mats, and all training equipment — everything you need in one world-class academy.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-icon-wrap">⏰</div>
+        <div class="why-title">Flexible Timings</div>
+        <p class="why-desc">Morning and evening batches Monday to Saturday give you the flexibility to train around school, college, or work schedules.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STACKING CARDS — CORE VALUES -->
+  <section class="stack-section">
+    <div class="section-header">
+      <span class="section-tag">The UMF Way</span>
+      <h2 class="section-title">CORE <span>VALUES</span></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="stack-container">
+
+      <div class="stack-card" style="--card-bg: #0f0005; --card-accent: #e0001b; --card-index: 0;">
+        <div class="stack-card-inner">
+          <div class="stack-num">01</div>
+          <div class="stack-content">
+            <div class="stack-tag">First Principle</div>
+            <h3 class="stack-title">DISCIPLINE</h3>
+            <p class="stack-desc">Every champion is built on a foundation of discipline. At UMF, we don't just train bodies — we train minds. Showing up every day, pushing past comfort, and respecting the process is what separates a student from a warrior.</p>
+            <div class="stack-pills">
+              <span class="stack-pill">Daily Practice</span>
+              <span class="stack-pill">Mental Toughness</span>
+              <span class="stack-pill">Consistency</span>
+            </div>
+          </div>
+          <div class="stack-icon-wrap"><div class="stack-icon">🧠</div></div>
+        </div>
+      </div>
+
+      <div class="stack-card" style="--card-bg: #00050f; --card-accent: #2a52a8; --card-index: 1;">
+        <div class="stack-card-inner">
+          <div class="stack-num">02</div>
+          <div class="stack-content">
+            <div class="stack-tag">Second Principle</div>
+            <h3 class="stack-title">STRENGTH</h3>
+            <p class="stack-desc">Strength is more than muscle. At UMF, we build physical power through MMA, Boxing, CrossFit and more — but the real strength we develop is the kind that carries you through life's toughest moments.</p>
+            <div class="stack-pills">
+              <span class="stack-pill">Physical Power</span>
+              <span class="stack-pill">Inner Resilience</span>
+              <span class="stack-pill">Combat Fitness</span>
+            </div>
+          </div>
+          <div class="stack-icon-wrap"><div class="stack-icon">💪</div></div>
+        </div>
+      </div>
+
+      <div class="stack-card" style="--card-bg: #0a0a00; --card-accent: #cc6600; --card-index: 2;">
+        <div class="stack-card-inner">
+          <div class="stack-num">03</div>
+          <div class="stack-content">
+            <div class="stack-tag">Third Principle</div>
+            <h3 class="stack-title">FOCUS</h3>
+            <p class="stack-desc">In the ring and in life, focus is everything. Our training sharpens your attention, reaction time, and situational awareness. A focused mind is the most dangerous weapon any martial artist can have.</p>
+            <div class="stack-pills">
+              <span class="stack-pill">Sharp Mind</span>
+              <span class="stack-pill">Reaction Speed</span>
+              <span class="stack-pill">Awareness</span>
+            </div>
+          </div>
+          <div class="stack-icon-wrap"><div class="stack-icon">🎯</div></div>
+        </div>
+      </div>
+
+      <div class="stack-card" style="--card-bg: #00080a; --card-accent: #008866; --card-index: 3;">
+        <div class="stack-card-inner">
+          <div class="stack-num">04</div>
+          <div class="stack-content">
+            <div class="stack-tag">Fourth Principle</div>
+            <h3 class="stack-title">RESPECT</h3>
+            <p class="stack-desc">From white belt to black belt, respect is non-negotiable at UMF. Respect for your coach, your fellow students, and yourself. This is the value that makes our academy a family — not just a gym.</p>
+            <div class="stack-pills">
+              <span class="stack-pill">Honour the Art</span>
+              <span class="stack-pill">Community</span>
+              <span class="stack-pill">Humility</span>
+            </div>
+          </div>
+          <div class="stack-icon-wrap"><div class="stack-icon">🙏</div></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2 class="cta-title">READY TO BEGIN?</h2>
+    <p class="cta-sub">Contact us today · Admissions open for all ages</p>
+    <div class="cta-btns">
+      <button class="btn-white" onclick="goTo('contact')">Contact Us Now</button>
+      <a class="btn-outline-white" href="tel:9908455835">📞 9908455835</a>
+    </div>
+  </section>
+
+</div><!-- end page-services -->
+
+
+<!-- ═══════════════ PAGE: CONTACT ═══════════════ -->
+<div id="page-contact" class="page">
+
+  <section class="contact-hero">
+    <div>
+      <h1>GET IN <span>TOUCH</span></h1>
+      <p>Enroll today · Visit us · Call or WhatsApp</p>
+    </div>
+  </section>
+
+  <div class="contact-section">
+
+    <!-- LEFT: Info -->
+    <div class="contact-info">
+      <div class="contact-info-title">Contact UMF Academy</div>
+      <p class="contact-info-sub">
+        We'd love to welcome you to the UMF family. Reach out by phone, WhatsApp, visit us at
+        the academy, or fill the form — we'll get back to you promptly.
+      </p>
+
+      <div class="contact-item">
+        <div class="contact-icon">📞</div>
+        <div class="contact-detail">
+          <div class="contact-detail-label">Phone / WhatsApp</div>
+          <div class="contact-detail-val">
+            <a href="tel:9908455835">9908455835</a><br>
+            <a href="tel:7382254343">73822 54343</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon">📍</div>
+        <div class="contact-detail">
+          <div class="contact-detail-label">Academy Address</div>
+          <div class="contact-detail-val">
+            Unbent Martial Fitness Pvt Ltd<br>
+            Prashanth Nagar, Uppal<br>
+            (Above SBI Bank), Hyderabad
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon">⏰</div>
+        <div class="contact-detail">
+          <div class="contact-detail-label">Training Hours</div>
+          <div class="contact-detail-val">
+            6:00 AM – 11:00 AM<br>
+            5:00 PM – 9:00 PM<br>
+            <span style="color:var(--gray);font-size:0.85rem;">Monday to Saturday</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="social-row">
+        <a class="social-btn" href="https://www.instagram.com/" target="_blank">
+          📷 Instagram
+        </a>
+        <a class="social-btn" href="https://wa.me/919908455835" target="_blank">
+          💬 WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT: Form -->
+    <div class="contact-form">
+      <div class="form-title">ENROLLMENT FORM</div>
+      <div id="enrollment-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Full Name</label>
+            <input class="form-input" type="text" id="f-name" placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Age</label>
+            <input class="form-input" type="number" id="f-age" placeholder="Your age" min="4" max="80">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Phone Number</label>
+          <input class="form-input" type="tel" id="f-phone" placeholder="+91 XXXXX XXXXX">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Interested In</label>
+          <select class="form-select" id="f-program">
+            <option value="">Select a program</option>
+            <option>MMA (Mixed Martial Arts)</option>
+            <option>Boxing</option>
+            <option>Kick-Boxing</option>
+            <option>Karate</option>
+            <option>Gymnastics</option>
+            <option>CrossFit Workouts</option>
+            <option>Nunchaku</option>
+            <option>Bo-Staff (Stick)</option>
+            <option>Sword Training</option>
+            <option>Self Defense (Girls/Women)</option>
+            <option>Multiple Programs</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Preferred Batch</label>
+          <select class="form-select" id="f-batch">
+            <option value="">Select a batch</option>
+            <option>Morning (6 AM – 11 AM)</option>
+            <option>Evening (5 PM – 9 PM)</option>
+            <option>Either works</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Message (Optional)</label>
+          <textarea class="form-textarea" id="f-message" placeholder="Any questions or details you'd like to share..."></textarea>
+        </div>
+        <button class="form-submit" onclick="submitForm()">SUBMIT ENROLLMENT →</button>
+      </div>
+
+      <div class="form-success" id="form-success">
+        <div class="form-success-icon">✅</div>
+        <div class="form-success-msg">ENROLLMENT RECEIVED!</div>
+        <p class="form-success-sub">
+          Thank you! Master Taher's team will contact you within 24 hours.<br>
+          You can also reach us directly at <strong>9908455835</strong>.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- MAP -->
+  <div class="map-section">
+    <div class="section-header">
+      <span class="section-tag">Find Us</span>
+      <h2 class="section-title">VISIT THE <span>ACADEMY</span></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="map-wrapper">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.0906144222045!2d78.5539284746274!3d17.407438502228246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9947ce1b9dbf%3A0x75598866a92e2586!2sUNBENT%20MARTIAL%20FITNESS%20PVT%20LTD%20(%20A%20complete%20Martial%20Arts%20%26%20Fitness%20Academy)!5e0!3m2!1sen!2sin!4v1772987005481!5m2!1sen!2sin"
+        allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+
+</div><!-- end page-contact -->
+
+
+<!-- ═══════════════ PAGE: PRICING + GALLERY ═══════════════ -->
+<div id="page-pricing" class="page">
+
+  <!-- HERO BANNER -->
+  <section class="pricing-hero">
+    <div class="pricing-hero-inner">
+      <span class="section-tag">Transparent & Affordable</span>
+      <h1 class="pricing-hero-title">FEES <span>STRUCTURE</span></h1>
+      <p class="pricing-hero-sub">Admissions open · All ages · All levels · Registration: ₹500/-</p>
+    </div>
+  </section>
+
+  <!-- MONTHLY FEES TABLE -->
+  <section class="pricing-section">
+    <div class="section-header">
+      <span class="section-tag">Monthly</span>
+      <h2 class="section-title">MONTHLY <span>FEES</span></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="pricing-table-wrap">
+      <table class="pricing-table">
+        <thead>
+          <tr>
+            <th>Course</th>
+            <th>Under 12 Years</th>
+            <th>Above 12 Years</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>🥋 Karate</td><td>₹1,500/-</td><td>₹2,000/-</td></tr>
+          <tr><td>🥊 Kick Boxing</td><td>₹2,000/-</td><td>₹2,500/-</td></tr>
+          <tr><td>🤼 MMA (Mixed Martial Arts)</td><td>₹2,500/-</td><td>₹3,000/-</td></tr>
+          <tr><td>🤸 Gymnastics</td><td>₹2,000/-</td><td>₹2,500/-</td></tr>
+          <tr><td>💪 CrossFit Workouts</td><td>₹2,000/-</td><td>₹2,500/-</td></tr>
+          <tr><td>⚔️ Nunchaku / Stick / Sword</td><td>₹5,000/-</td><td>₹5,000/-</td></tr>
+          <tr><td>🎬 Cine Stunt Training</td><td>—</td><td>₹5,000/-</td></tr>
+          <tr class="highlight-row"><td>🏅 Personal Training</td><td colspan="2" style="text-align:center;">₹10,000/- per month</td></tr>
+          <tr class="free-row"><td>🛡️ Self Defense (Girls & Women)</td><td colspan="2" style="text-align:center; color:#00cc88; font-weight:700; letter-spacing:2px;">FREE</td></tr>
+        </tbody>
+      </table>
+      <div class="reg-badge">⭐ Registration Fees: ₹500/- (One Time)</div>
+    </div>
+  </section>
+
+  <!-- LONG TERM PLANS -->
+  <section class="plans-section">
+    <div class="section-header">
+      <span class="section-tag">Save More</span>
+      <h2 class="section-title">LONG TERM <span>PLANS</span></h2>
+      <div class="section-line"></div>
+      <p style="color:var(--gray); font-size:0.85rem; margin-top:12px;">Under 12 Years &nbsp;|&nbsp; Above 12 Years</p>
+    </div>
+
+    <div class="plans-grid">
+
+      <div class="plan-card">
+        <div class="plan-header" style="background: linear-gradient(135deg, #1a1a2e, #16213e);">
+          <div class="plan-icon">🥋</div>
+          <div class="plan-name">KARATE</div>
+        </div>
+        <div class="plan-body">
+          <div class="plan-row"><span>3 Months</span><span class="plan-prices">₹3,500 &nbsp;|&nbsp; ₹4,500</span></div>
+          <div class="plan-row"><span>6 Months</span><span class="plan-prices">₹6,000 &nbsp;|&nbsp; ₹7,500</span></div>
+          <div class="plan-row best"><span>1 Year 🔥</span><span class="plan-prices">₹10,000 &nbsp;|&nbsp; ₹12,000</span></div>
+        </div>
+      </div>
+
+      <div class="plan-card">
+        <div class="plan-header" style="background: linear-gradient(135deg, #2e1a1a, #3e1616);">
+          <div class="plan-icon">🥊</div>
+          <div class="plan-name">KICK BOXING</div>
+        </div>
+        <div class="plan-body">
+          <div class="plan-row"><span>3 Months</span><span class="plan-prices">₹5,000 &nbsp;|&nbsp; ₹6,000</span></div>
+          <div class="plan-row"><span>6 Months</span><span class="plan-prices">₹8,000 &nbsp;|&nbsp; ₹9,000</span></div>
+          <div class="plan-row best"><span>1 Year 🔥</span><span class="plan-prices">₹15,000 &nbsp;|&nbsp; ₹15,000</span></div>
+        </div>
+      </div>
+
+      <div class="plan-card">
+        <div class="plan-header" style="background: linear-gradient(135deg, #1a2e1a, #163e16);">
+          <div class="plan-icon">🤼</div>
+          <div class="plan-name">MMA</div>
+        </div>
+        <div class="plan-body">
+          <div class="plan-row"><span>3 Months</span><span class="plan-prices">₹6,000 &nbsp;|&nbsp; ₹7,500</span></div>
+          <div class="plan-row"><span>6 Months</span><span class="plan-prices">₹10,000 &nbsp;|&nbsp; ₹12,000</span></div>
+          <div class="plan-row best"><span>1 Year 🔥</span><span class="plan-prices">₹18,000 &nbsp;|&nbsp; ₹18,000</span></div>
+        </div>
+      </div>
+
+      <div class="plan-card">
+        <div class="plan-header" style="background: linear-gradient(135deg, #2e1a2e, #3e163e);">
+          <div class="plan-icon">🤸</div>
+          <div class="plan-name">GYMNASTICS</div>
+        </div>
+        <div class="plan-body">
+          <div class="plan-row"><span>3 Months</span><span class="plan-prices">₹5,000 &nbsp;|&nbsp; ₹6,000</span></div>
+          <div class="plan-row"><span>6 Months</span><span class="plan-prices">₹8,000 &nbsp;|&nbsp; ₹9,000</span></div>
+          <div class="plan-row best"><span>1 Year 🔥</span><span class="plan-prices">₹15,000 &nbsp;|&nbsp; ₹15,000</span></div>
+        </div>
+      </div>
+
+      <div class="plan-card">
+        <div class="plan-header" style="background: linear-gradient(135deg, #1a2e2e, #163e3e);">
+          <div class="plan-icon">💪</div>
+          <div class="plan-name">CROSSFIT</div>
+        </div>
+        <div class="plan-body">
+          <div class="plan-row"><span>3 Months</span><span class="plan-prices">₹5,000 &nbsp;|&nbsp; ₹6,000</span></div>
+          <div class="plan-row"><span>6 Months</span><span class="plan-prices">₹8,000 &nbsp;|&nbsp; ₹9,000</span></div>
+          <div class="plan-row best"><span>1 Year 🔥</span><span class="plan-prices">₹15,000 &nbsp;|&nbsp; ₹15,000</span></div>
+        </div>
+      </div>
+
+      <div class="plan-card plan-special">
+        <div class="plan-header" style="background: linear-gradient(135deg, #2e2a0a, #3e360a);">
+          <div class="plan-icon">🏅</div>
+          <div class="plan-name">PERSONAL TRAINING</div>
+        </div>
+        <div class="plan-body" style="text-align:center; padding: 32px 24px;">
+          <div style="font-family:'Bebas Neue',sans-serif; font-size:3rem; color:var(--red);">₹10,000/-</div>
+          <div style="font-size:0.8rem; color:var(--gray); letter-spacing:2px; margin-top:6px;">PER MONTH · ONE ON ONE</div>
+        </div>
+      </div>
+
+      <div class="plan-card plan-free">
+        <div class="plan-header" style="background: linear-gradient(135deg, #0a2e1a, #0a3e22);">
+          <div class="plan-icon">🛡️</div>
+          <div class="plan-name">SELF DEFENSE</div>
+        </div>
+        <div class="plan-body" style="text-align:center; padding: 32px 24px;">
+          <div style="font-family:'Bebas Neue',sans-serif; font-size:3.5rem; color:#00cc88; letter-spacing:4px;">FREE</div>
+          <div style="font-size:0.78rem; color:var(--gray); letter-spacing:2px; margin-top:6px;">GIRLS & WOMEN'S ONLY</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery-page-section">
+    <div class="section-header">
+      <span class="section-tag">Our Academy</span>
+      <h2 class="section-title">GALLERY</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="gallery-page-grid">
+      <div class="gp-card gp-wide">
+        <div class="gp-placeholder">🏟️</div>
+        <div class="gp-label">The Academy</div>
+      </div>
+      <div class="gp-card">
+        <div class="gp-placeholder">🥊</div>
+        <div class="gp-label">Boxing Training</div>
+      </div>
+      <div class="gp-card">
+        <div class="gp-placeholder">🥋</div>
+        <div class="gp-label">Karate Batch</div>
+      </div>
+      <div class="gp-card">
+        <div class="gp-placeholder">🤸</div>
+        <div class="gp-label">Gymnastics</div>
+      </div>
+      <div class="gp-card gp-wide">
+        <div class="gp-placeholder">👊</div>
+        <div class="gp-label">MMA Sparring</div>
+      </div>
+      <div class="gp-card">
+        <div class="gp-placeholder">⚔️</div>
+        <div class="gp-label">Weapons Training</div>
+      </div>
+      <div class="gp-card">
+        <div class="gp-placeholder">🏆</div>
+        <div class="gp-label">Champions</div>
+      </div>
+      <div class="gp-card">
+        <div class="gp-placeholder">🛡️</div>
+        <div class="gp-label">Women's Self Defense</div>
+      </div>
+      <div class="gp-card">
+        <div class="gp-placeholder">💪</div>
+        <div class="gp-label">CrossFit</div>
+      </div>
+    </div>
+
+    <p class="gallery-note">📸 Real photos coming soon — follow us on <a href="https://www.instagram.com/unbentmartialfitness" target="_blank" style="color:var(--red);">@unbentmartialfitness</a></p>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2 class="cta-title">READY TO START?</h2>
+    <p class="cta-sub">Register today · ₹500 one-time fee · All ages welcome</p>
+    <div class="cta-btns">
+      <button class="btn-white" onclick="goTo('contact')">Enroll Now</button>
+      <a class="btn-outline-white" href="tel:9908455835">📞 Call Us</a>
+    </div>
+  </section>
+
+</div><!-- end page-pricing -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-name">UNBENT MARTIAL FITNESS</div>
+      <div class="footer-tagline">Mind · Body · Spirit</div>
+      <p class="footer-desc">
+        UMF Academy — Hyderabad's premier martial arts training center led by certified India Coach
+        Master Shaik Taher. Forging champions of all ages since day one.
+      </p>
+    </div>
+    <div>
+      <div class="footer-col-title">Quick Links</div>
+      <ul class="footer-links">
+        <li><a onclick="goTo('home')">Home</a></li>
+        <li><a onclick="goTo('services')">Our Programs</a></li>
+        <li><a onclick="goTo('contact')">Contact & Enroll</a></li>
+        <li><a onclick="goTo('home')">Academy Gallery</a></li>
+        <li><a onclick="goTo('home')">Testimonials</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Contact</div>
+      <div class="footer-contact-item">📞 <a href="tel:9908455835">9908455835</a></div>
+      <div class="footer-contact-item">📞 <a href="tel:7382254343">73822 54343</a></div>
+      <div class="footer-contact-item">📍 Prashanth Nagar, Uppal<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Above SBI Bank), Hyd</div>
+      <div class="footer-contact-item">⏰ 6AM–11AM | 5PM–9PM</div>
+      <div class="footer-contact-item">📅 Monday to Saturday</div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2024 Unbent Martial Fitness Pvt Ltd. All rights reserved.</div>
+    <div class="footer-legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a class="whatsapp-float" href="https://wa.me/919908455835" target="_blank" title="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+    <path d="M16 0C7.163 0 0 7.163 0 16c0 2.833.738 5.495 2.031 7.806L0 32l8.418-2.008A15.93 15.93 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.27 13.27 0 01-6.764-1.851l-.484-.288-5.004 1.194 1.228-4.874-.316-.5A13.269 13.269 0 012.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.271-9.952c-.397-.198-2.35-1.16-2.715-1.292-.364-.132-.629-.198-.894.198s-1.026 1.292-1.257 1.557c-.231.265-.463.298-.86.099-.397-.198-1.675-.617-3.191-1.97-1.179-1.054-1.976-2.354-2.207-2.752-.231-.397-.025-.611.174-.809.178-.178.397-.463.595-.695.198-.231.265-.397.397-.662.132-.265.066-.497-.033-.695-.099-.198-.894-2.156-1.225-2.951-.322-.774-.648-.668-.894-.681l-.762-.013c-.265 0-.695.099-1.059.497s-1.39 1.358-1.39 3.315 1.423 3.847 1.621 4.112c.198.265 2.8 4.275 6.784 5.995.948.41 1.688.654 2.265.838.952.302 1.818.259 2.502.157.763-.114 2.35-.96 2.682-1.888.332-.928.332-1.723.231-1.888-.099-.165-.364-.264-.761-.463z"/>
+  </svg>
+</a>
+
+<script>
+  function goTo(page) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.getElementById('page-' + page).classList.add('active');
+    // Desktop nav
+    document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+    const navLink = document.getElementById('nav-' + page);
+    if (navLink) navLink.classList.add('active');
+    // Mobile nav
+    document.querySelectorAll('.mobile-nav a').forEach(a => a.classList.remove('active'));
+    const mNavLink = document.getElementById('mnav-' + page);
+    if (mNavLink) mNavLink.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function toggleMenu() {
+    const nav = document.getElementById('mobile-nav');
+    const btn = document.getElementById('hamburger');
+    nav.classList.toggle('open');
+    btn.classList.toggle('open');
+  }
+
+  function closeMenu() {
+    document.getElementById('mobile-nav').classList.remove('open');
+    document.getElementById('hamburger').classList.remove('open');
+  }
+
+  // Close menu when clicking outside
+  document.addEventListener('click', function(e) {
+    const nav = document.getElementById('mobile-nav');
+    const btn = document.getElementById('hamburger');
+    if (!nav.contains(e.target) && !btn.contains(e.target)) {
+      nav.classList.remove('open');
+      btn.classList.remove('open');
+    }
+  });
+
+  // ═══ SERVICE CARDS — PARALLAX (tilt + scroll reveal + depth) ═══
+  (function() {
+    // 1️⃣ SCROLL REVEAL — cards fade+rise in one by one
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.classList.add('visible');
+          }, (entry.target.dataset.index || 0) * 80);
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.service-card').forEach((card, i) => {
+      card.dataset.index = i;
+      revealObserver.observe(card);
+    });
+
+    // 2️⃣ MOUSE TILT + DEPTH PARALLAX
+    document.querySelectorAll('.service-card').forEach(card => {
+      const icon = card.querySelector('.service-icon');
+      const num  = card.querySelector('.service-num');
+
+      card.addEventListener('mousemove', e => {
+        const rect   = card.getBoundingClientRect();
+        const cx     = rect.left + rect.width  / 2;
+        const cy     = rect.top  + rect.height / 2;
+        const dx     = (e.clientX - cx) / (rect.width  / 2); // -1 to 1
+        const dy     = (e.clientY - cy) / (rect.height / 2); // -1 to 1
+
+        // Card tilt — subtle 6deg max
+        const tiltX  =  dy * -6;
+        const tiltY  =  dx *  6;
+        card.style.transform = `perspective(900px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) translateZ(0)`;
+
+        // Icon moves opposite (depth illusion) — 8px max
+        if (icon) icon.style.transform = `translate(${dx * -8}px, ${dy * -8}px) scale(1.08)`;
+
+        // Number moves same direction but slower — 5px max
+        if (num)  num.style.transform  = `translate(${dx * 5}px, ${dy * 5}px)`;
+      });
+
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'perspective(900px) rotateX(0) rotateY(0) translateZ(0)';
+        if (icon) icon.style.transform = 'translate(0,0) scale(1)';
+        if (num)  num.style.transform  = 'translate(0,0)';
+      });
+    });
+
+    // 3️⃣ SCROLL PARALLAX — cards subtly shift up as you scroll
+    const parallaxCards = document.querySelectorAll('.service-card');
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      parallaxCards.forEach((card, i) => {
+        const rect   = card.getBoundingClientRect();
+        const inView = rect.top < window.innerHeight && rect.bottom > 0;
+        if (inView && !card.matches(':hover')) {
+          const speed  = (i % 2 === 0) ? 0.025 : 0.018; // alternate rows different speed
+          const offset = (rect.top - window.innerHeight / 2) * speed;
+          card.style.transform = `perspective(900px) translateY(${offset}px)`;
+        }
+      });
+    }, { passive: true });
+  })();
+
+
+  //   1. Save this number in your contacts: +34 644 52 74 90
+  //   2. Send this exact message to it on WhatsApp:
+  //        I allow callmebot to send me messages
+  //   3. You'll get an API key back (e.g. 1234567)
+  //   4. Replace YOUR_CALLMEBOT_API_KEY below with that key
+  // ═══════════════════════════════════════════════
+
+  const TELEGRAM_BOT_TOKEN = '8710183246:AAGI-v2dsYLILbBHR8kGe5FoKeZQDEJOFQs';
+  const TELEGRAM_CHAT_ID   = '1340316382';
+
+  async function submitForm() {
+    const name    = document.getElementById('f-name').value.trim();
+    const phone   = document.getElementById('f-phone').value.trim();
+    const program = document.getElementById('f-program').value;
+    const age     = document.getElementById('f-age').value.trim();
+    const batch   = document.getElementById('f-batch').value || 'Not specified';
+    const message = document.getElementById('f-message').value.trim() || 'None';
+
+    if (!name || !phone || !program) {
+      alert('Please fill in your name, phone number, and select a program.');
+      return;
+    }
+
+    const btn = document.querySelector('.form-submit');
+    btn.textContent = 'SENDING...';
+    btn.disabled = true;
+
+    const timestamp = new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' });
+
+    // 1️⃣ Send Telegram notification to owner
+    try {
+      const teleMsg = `🥊 *NEW UMF ENROLLMENT!*\n\n👤 *Name:* ${name}\n📞 *Phone:* ${phone}\n🎯 *Program:* ${program}\n🕐 *Batch:* ${batch}\n🗓 *Age:* ${age || 'N/A'}\n💬 *Message:* ${message}\n\n⏰ ${timestamp}`;
+      await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          chat_id: TELEGRAM_CHAT_ID,
+          text: teleMsg,
+          parse_mode: 'Markdown'
+        })
+      });
+    } catch (err) {
+      console.warn('Telegram alert failed:', err);
+    }
+
+    // 2️⃣ Show success screen
+    document.getElementById('enrollment-form').style.display = 'none';
+    document.getElementById('form-success').style.display = 'block';
+
+    // 3️⃣ Open student's WhatsApp with pre-filled message
+    const waMsg = encodeURIComponent(
+      `Hi! I'd like to enroll at UMF Academy.\n\nName: ${name}\nAge: ${age || 'Not specified'}\nPhone: ${phone}\nProgram: ${program}\nBatch: ${batch}\nMessage: ${message}`
+    );
+    setTimeout(() => {
+      window.open(`https://wa.me/919908455835?text=${waMsg}`, '_blank');
+    }, 800);
+  }
+
+  // ═══ INSTAGRAM CAROUSEL ═══
+  (function() {
+    const track  = document.getElementById('instaTrack');
+    const dotsEl = document.getElementById('instaDots');
+    if (!track) return;
+
+    const cards = track.querySelectorAll('.insta-card');
+    let visibleCount = window.innerWidth <= 600 ? 1 : window.innerWidth <= 900 ? 2 : 3;
+    let current  = 0;
+    const total  = cards.length;
+    const maxIndex = () => total - visibleCount;
+
+    // Build dots
+    function buildDots() {
+      dotsEl.innerHTML = '';
+      for (let i = 0; i <= maxIndex(); i++) {
+        const dot = document.createElement('button');
+        dot.className = 'insta-dot' + (i === 0 ? ' active' : '');
+        dot.onclick = () => goToSlide(i);
+        dotsEl.appendChild(dot);
+      }
+    }
+
+    function goToSlide(index) {
+      current = Math.max(0, Math.min(index, maxIndex()));
+      const cardWidth = cards[0].offsetWidth + 16;
+      track.style.transform = `translateX(-${current * cardWidth}px)`;
+      dotsEl.querySelectorAll('.insta-dot').forEach((d, i) => {
+        d.classList.toggle('active', i === current);
+      });
+    }
+
+    window.instaSlide = function(dir) { goToSlide(current + dir); };
+
+    buildDots();
+
+    // Auto-play every 4 seconds
+    setInterval(() => {
+      goToSlide(current >= maxIndex() ? 0 : current + 1);
+    }, 4000);
+
+    // Recalculate on resize
+    window.addEventListener('resize', () => {
+      visibleCount = window.innerWidth <= 600 ? 1 : window.innerWidth <= 900 ? 2 : 3;
+      buildDots();
+      goToSlide(0);
+    });
+  })();
+</script>
+
+</body>
+</html>
