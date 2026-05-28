@@ -1,0 +1,14 @@
+# Original/raw photo files — kept locally only, not pushed to git
+# (Sony ARW files alone are ~320 MB; the converted web versions are committed)
+**/_originals/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
