@@ -175,18 +175,18 @@
     .hero-bg-image {
       position: absolute; inset: 0;
       background-image: url('images/gallery/candids/candid-02.jpg');
-      background-size: cover; background-position: center 30%;
-      opacity: 0.28;
-      filter: grayscale(40%) contrast(1.05);
+      background-size: cover; background-position: center 25%;
+      opacity: 1;
     }
     .hero-bg-image::after {
       content: '';
       position: absolute; inset: 0;
-      background: linear-gradient(90deg, rgba(10,10,10,0.85) 0%, rgba(10,10,10,0.55) 45%, rgba(10,10,10,0.15) 100%);
+      /* Left side: dark enough for white text readability. Right side: image stays bright & visible. */
+      background: linear-gradient(90deg, rgba(10,10,10,0.78) 0%, rgba(10,10,10,0.50) 40%, rgba(10,10,10,0.10) 75%, rgba(10,10,10,0.05) 100%);
     }
 
     .hero-bg-pattern {
-      position: absolute; inset: 0; opacity: 0.04;
+      position: absolute; inset: 0; opacity: 0.03;
       background-image: repeating-linear-gradient(
         45deg, var(--red) 0, var(--red) 1px, transparent 0, transparent 50%
       );
@@ -195,11 +195,7 @@
     }
 
     .hero-red-bar {
-      position: absolute; top: 0; right: 0;
-      width: 45%; height: 100%;
-      background: linear-gradient(160deg, var(--red) 0%, var(--red-dark) 60%, transparent 100%);
-      clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
-      opacity: 0.85;
+      display: none; /* removed per design — keeps hero image clean and visible */
     }
 
 
@@ -411,7 +407,10 @@
     /* ───── TIMINGS ───── */
     .timings-section {
       padding: 100px 6%;
-      background: linear-gradient(180deg, var(--black) 0%, var(--dark) 100%);
+      background:
+        linear-gradient(180deg, rgba(10,10,10,0.94) 0%, rgba(20,20,20,0.96) 100%),
+        url('images/gallery/candids/candid-08.jpg') center/cover no-repeat fixed;
+      position: relative;
     }
     .timings-grid {
       display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -473,7 +472,9 @@
     /* ─── PAGE: SERVICES ─── */
     .services-hero {
       min-height: 40vh;
-      background: linear-gradient(135deg, var(--red-dark) 0%, var(--black) 60%);
+      background:
+        linear-gradient(135deg, rgba(26,0,5,0.85) 0%, rgba(10,10,10,0.75) 60%, rgba(10,10,10,0.5) 100%),
+        url('images/gallery/candids/candid-09.jpg') center/cover no-repeat;
       display: flex; align-items: flex-end; padding: 100px 6% 60px;
       position: relative; overflow: hidden;
     }
@@ -591,7 +592,9 @@
     /* ─── PAGE: CONTACT ─── */
     .contact-hero {
       min-height: 35vh;
-      background: linear-gradient(135deg, #0a0a1a 0%, var(--blue) 100%);
+      background:
+        linear-gradient(135deg, rgba(10,10,26,0.82) 0%, rgba(10,46,93,0.7) 100%),
+        url('images/gallery/candids/candid-17.jpg') center/cover no-repeat;
       display: flex; align-items: flex-end; padding: 100px 6% 60px;
     }
     .contact-hero h1 {
@@ -868,7 +871,10 @@
     /* ───── TESTIMONIALS ───── */
     .testimonials-section {
       padding: 90px 6%;
-      background: var(--dark2);
+      background:
+        linear-gradient(180deg, rgba(20,20,20,0.94) 0%, rgba(20,20,20,0.96) 100%),
+        url('images/gallery/candids/candid-19.jpg') center/cover no-repeat fixed;
+      position: relative;
     }
     .testimonials-grid {
       display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -1109,6 +1115,8 @@
       .hero-stats { margin-top: 32px; gap: 24px; flex-wrap: wrap; }
       .hero-red-bar { display: none; }
       .hero-badge { display: none; }
+      /* background-attachment: fixed is buggy on iOS — disable for mobile */
+      .timings-section, .testimonials-section { background-attachment: scroll, scroll; }
 
       /* Sections */
       .trainer-section { padding: 60px 5%; }
@@ -1376,7 +1384,9 @@
     }
     /* ───── PRICING + GALLERY PAGE ───── */
     .pricing-hero {
-      background: linear-gradient(135deg, #0a0a0a 0%, #1a0005 50%, #0a0a0a 100%);
+      background:
+        linear-gradient(135deg, rgba(10,10,10,0.88) 0%, rgba(26,0,5,0.82) 50%, rgba(10,10,10,0.88) 100%),
+        url('images/gallery/candids/candid-15.jpg') center/cover no-repeat;
       padding: 120px 6% 80px;
       border-bottom: 1px solid rgba(224,0,27,0.2);
       text-align: center;
