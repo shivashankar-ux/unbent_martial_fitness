@@ -1511,8 +1511,38 @@
       .menu-images-grid { grid-template-columns: 1fr; }
     }
 
+    /* Gallery page hero header */
+    .gallery-hero {
+      padding: 130px 6% 60px;
+      background:
+        linear-gradient(135deg, rgba(10,10,10,0.92) 0%, rgba(26,0,5,0.88) 60%, rgba(10,10,10,0.92) 100%),
+        url('images/gallery/candids/candid-02.jpg') center/cover no-repeat;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .gallery-hero-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .gallery-hero-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2.8rem, 7vw, 5.5rem);
+      letter-spacing: 3px; color: var(--white);
+      line-height: 1; margin: 14px 0 18px;
+    }
+    .gallery-hero-title span { color: var(--red); }
+    .gallery-hero-sub {
+      font-size: clamp(0.92rem, 1.6vw, 1.1rem);
+      color: var(--light-gray);
+      max-width: 640px; margin: 0 auto;
+      line-height: 1.6;
+    }
+    @media (max-width: 768px) {
+      .gallery-hero { padding: 110px 5% 40px; }
+    }
+
     /* Gallery — full page */
-    .gallery-page-section { padding: 90px 6%; background: var(--black); }
+    .gallery-page-section { padding: 70px 6% 90px; background: var(--black); }
     .gp-subhead {
       font-family: 'Oswald', sans-serif;
       font-size: 0.75rem; letter-spacing: 5px; text-transform: uppercase;
@@ -1638,6 +1668,7 @@
     <li><a href="#" id="nav-home" class="active" onclick="goTo('home'); return false;">Home</a></li>
     <li><a href="#" id="nav-services" onclick="goTo('services'); return false;">Services</a></li>
     <li><a href="#" id="nav-pricing" onclick="goTo('pricing'); return false;">Pricing</a></li>
+    <li><a href="#" id="nav-gallery" onclick="goTo('gallery'); return false;">Gallery</a></li>
     <li><a href="#" id="nav-contact" onclick="goTo('contact'); return false;">Contact</a></li>
   </ul>
 
@@ -1652,6 +1683,7 @@
   <a href="#" id="mnav-home" class="active" onclick="goTo('home'); closeMenu(); return false;">Home</a>
   <a href="#" id="mnav-services" onclick="goTo('services'); closeMenu(); return false;">Services</a>
   <a href="#" id="mnav-pricing" onclick="goTo('pricing'); closeMenu(); return false;">Pricing</a>
+  <a href="#" id="mnav-gallery" onclick="goTo('gallery'); closeMenu(); return false;">Gallery</a>
   <a href="#" id="mnav-contact" onclick="goTo('contact'); closeMenu(); return false;">Contact</a>
   <a class="mobile-join" onclick="goTo('contact'); closeMenu();">Join Now →</a>
 </div>
@@ -1794,114 +1826,6 @@
         <div class="ages-sub">Kids, teens, adults & seniors — everyone is welcome at UMF Academy</div>
       </div>
       <button class="btn-white" onclick="goTo('contact')">Enroll Today →</button>
-    </div>
-  </section>
-
-  <!-- GALLERY PREVIEW -->
-  <section class="gallery-section">
-    <div class="section-header">
-      <span class="section-tag">Academy Views</span>
-      <h2 class="section-title">UMF <span>ACADEMY</span></h2>
-      <div class="section-line"></div>
-    </div>
-    <div class="gallery-grid">
-
-      <div class="gallery-item">
-        <div class="gallery-flip">
-          <div class="gallery-front has-photo" style="background-image:url('images/gallery/candids/candid-15.jpg');">
-            <div class="gallery-icon">🥊</div>
-            <div class="gallery-label">Training Hall</div>
-            <div class="gallery-hint">Hover to explore</div>
-          </div>
-          <div class="gallery-back">
-            <div class="gallery-icon">🥊</div>
-            <div class="gallery-back-title">Training Hall</div>
-            <div class="gallery-back-desc">State-of-the-art training floor with heavy bags, mats, and full sparring equipment for all disciplines.</div>
-            <span class="gallery-back-tag">UMF Academy</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="gallery-item">
-        <div class="gallery-flip">
-          <div class="gallery-front has-photo" style="background-image:url('images/gallery/candids/candid-13.jpg');">
-            <div class="gallery-icon">🥊</div>
-            <div class="gallery-label">Boxing Ring</div>
-            <div class="gallery-hint">Hover to explore</div>
-          </div>
-          <div class="gallery-back">
-            <div class="gallery-icon">🥊</div>
-            <div class="gallery-back-title">Boxing Ring</div>
-            <div class="gallery-back-desc">Professional full-size boxing ring for sparring sessions, competitions, and advanced training.</div>
-            <span class="gallery-back-tag">Professional Setup</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="gallery-item">
-        <div class="gallery-flip">
-          <div class="gallery-front has-photo" style="background-image:url('images/gallery/tournaments/tournament-01.jpg'); background-position: center 25%;">
-            <div class="gallery-icon">🏆</div>
-            <div class="gallery-label">Champions</div>
-            <div class="gallery-hint">Hover to explore</div>
-          </div>
-          <div class="gallery-back">
-            <div class="gallery-icon">🏆</div>
-            <div class="gallery-back-title">Champions</div>
-            <div class="gallery-back-desc">UMF students compete and win at local and national levels — building champions on and off the mat.</div>
-            <span class="gallery-back-tag">Winners Circle</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="gallery-item">
-        <div class="gallery-flip">
-          <div class="gallery-front has-photo" style="background-image:url('images/gallery/candids/candid-06.jpg');">
-            <div class="gallery-icon">⚔️</div>
-            <div class="gallery-label">Kids Batch</div>
-            <div class="gallery-hint">Hover to explore</div>
-          </div>
-          <div class="gallery-back">
-            <div class="gallery-icon">⚔️</div>
-            <div class="gallery-back-title">Kids Batch</div>
-            <div class="gallery-back-desc">Specially designed training for children — building discipline, focus, and confidence from an early age.</div>
-            <span class="gallery-back-tag">All Ages Welcome</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="gallery-item">
-        <div class="gallery-flip">
-          <div class="gallery-front has-photo" style="background-image:url('images/gallery/candids/candid-02.jpg');">
-            <div class="gallery-icon">🎯</div>
-            <div class="gallery-label">Group Training</div>
-            <div class="gallery-hint">Hover to explore</div>
-          </div>
-          <div class="gallery-back">
-            <div class="gallery-icon">🎯</div>
-            <div class="gallery-back-title">Group Training</div>
-            <div class="gallery-back-desc">Energy-packed group sessions that build team spirit, push limits, and accelerate skill development.</div>
-            <span class="gallery-back-tag">Team Spirit</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="gallery-item">
-        <div class="gallery-flip">
-          <div class="gallery-front has-photo" style="background-image:url('images/gallery/candids/candid-09.jpg');">
-            <div class="gallery-icon">💪</div>
-            <div class="gallery-label">Fitness Zone</div>
-            <div class="gallery-hint">Hover to explore</div>
-          </div>
-          <div class="gallery-back">
-            <div class="gallery-icon">💪</div>
-            <div class="gallery-back-title">Fitness Zone</div>
-            <div class="gallery-back-desc">CrossFit and conditioning area to build the strength, endurance, and power every martial artist needs.</div>
-            <span class="gallery-back-tag">Strength & Power</span>
-          </div>
-        </div>
-      </div>
-
     </div>
   </section>
 
@@ -2598,14 +2522,30 @@
     </div>
   </section>
 
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2 class="cta-title">READY TO START?</h2>
+    <p class="cta-sub">Register today · ₹500 one-time fee · All ages welcome</p>
+    <div class="cta-btns">
+      <button class="btn-white" onclick="goTo('contact')">Enroll Now</button>
+      <a class="btn-outline-white" href="tel:9908455835">📞 Call Us</a>
+    </div>
+  </section>
+
+</div><!-- end page-pricing -->
+<div id="page-gallery" class="page">
+
+  <!-- GALLERY HEADER -->
+  <section class="gallery-hero">
+    <div class="gallery-hero-inner">
+      <span class="section-tag">Our Academy</span>
+      <h1 class="gallery-hero-title">THE <span>GALLERY</span></h1>
+      <p class="gallery-hero-sub">Tournaments, training, candid moments — the real UMF, one frame at a time.</p>
+    </div>
+  </section>
+
   <!-- GALLERY -->
   <section class="gallery-page-section">
-    <div class="section-header">
-      <span class="section-tag">Our Academy</span>
-      <h2 class="section-title">GALLERY</h2>
-      <div class="section-line"></div>
-    </div>
-
     <div class="gp-subhead">Championships</div>
     <h3 class="gp-subhead-title">TOURNAMENTS &amp; <span style="color:var(--red);">WINS</span></h3>
     <div class="gp-subhead-line"></div>
@@ -2689,15 +2629,16 @@
 
   <!-- CTA -->
   <section class="cta-section">
-    <h2 class="cta-title">READY TO START?</h2>
-    <p class="cta-sub">Register today · ₹500 one-time fee · All ages welcome</p>
+    <h2 class="cta-title">READY TO JOIN THE FAMILY?</h2>
+    <p class="cta-sub">Be in the next batch photo. ₹500 one-time fee · All ages welcome</p>
     <div class="cta-btns">
       <button class="btn-white" onclick="goTo('contact')">Enroll Now</button>
       <a class="btn-outline-white" href="tel:9908455835">📞 Call Us</a>
     </div>
   </section>
 
-</div><!-- end page-pricing -->
+</div><!-- end page-gallery -->
+
 <footer>
   <div class="footer-grid">
     <div>
@@ -2714,7 +2655,7 @@
         <li><a onclick="goTo('home')">Home</a></li>
         <li><a onclick="goTo('services')">Our Programs</a></li>
         <li><a onclick="goTo('contact')">Contact & Enroll</a></li>
-        <li><a onclick="goTo('home')">Academy Gallery</a></li>
+        <li><a onclick="goTo('gallery')">Academy Gallery</a></li>
         <li><a onclick="goTo('home')">Testimonials</a></li>
       </ul>
     </div>
